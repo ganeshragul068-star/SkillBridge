@@ -1,0 +1,69 @@
+[
+  {
+    "studentId": "6589b6c2aad89337eac747cd",
+    "resumeId": "71b694f5202674ff7dd9e837",
+    "resumeTitle": "Full Stack MERN Developer Resume",
+    "targetRole": "Frontend React Developer Intern",
+    "jobId": "95eccc556d25c1ecf368a599",
+    "jobTitle": "Frontend React Developer Intern",
+    "company": "TechNova Labs",
+    "source": "saved-resume",
+    "matchPercentage": 100,
+    "matchingSkills": [
+      "React.js",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Git"
+    ],
+    "missingSkills": [],
+    "strengths": [
+      "Complete 100% coverage of all required technical competencies for this role.",
+      "High-impact quantified project bullets demonstrating hands-on React component design.",
+      "Industry-recognized Meta Front-End Developer credential included."
+    ],
+    "improvements": [
+      "Consider tailoring personal summary to specifically emphasize design systems experience.",
+      "Add TypeScript and testing libraries (Jest/RTL) as preferred skills to stand out."
+    ],
+    "relevantProjects": [
+      "CampHub — College Event Management Platform (React.js, Node.js, Express.js, MongoDB, Tailwind CSS)"
+    ],
+    "aiConfigured": false,
+    "_id": "c9851f97b1d0c934f3103b46",
+    "createdAt": "2026-11-01T13:19:46.499Z",
+    "updatedAt": "2026-11-01T13:19:46.499Z"
+  },
+  {
+    "studentId": "6589b6c2aad89337eac747cd",
+    "resumeId": "4f9f5ccdcd9e2c23ad1b6950",
+    "resumeTitle": "Senior MERN Developer Resume",
+    "targetRole": "Full Stack Tech Lead",
+    "jobId": "95eccc556d25c1ecf368a599",
+    "jobTitle": "Frontend React Developer Intern",
+    "company": "TechNova Labs",
+    "source": "saved-resume",
+    "matchPercentage": 50,
+    "matchingSkills": [
+      "React.js",
+      "Node.js"
+    ],
+    "missingSkills": [
+      "Docker",
+      "AWS"
+    ],
+    "strengths": [
+      "Strong coverage in core technologies: React.js, Node.js."
+    ],
+    "improvements": [
+      "Add or upskill in missing requirements: Docker, AWS.",
+      "Highlight any academic or extracurricular coursework involving Docker."
+    ],
+    "relevantProjects": [],
+    "aiAnalysis": null,
+    "aiConfigured": false,
+    "_id": "114335a32b881609e5591c45",
+    "createdAt": "2026-11-01T13:21:25.578Z",
+    "updatedAt": "2026-11-01T13:21:25.578Z"
+  }
+]

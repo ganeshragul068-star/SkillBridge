@@ -1,0 +1,42 @@
+[
+  {
+    "name": "SkillBridge Administrator",
+    "email": "admin@skillbridge.edu",
+    "password": "$2b$10$Ium1wBo0uOmU2u.hzP4l1OD/elq4rsqPe77FMuUeEC5EsGJCFbhkS",
+    "role": "admin",
+    "_id": "96cc7d0039f3cb7e4976c243",
+    "createdAt": "2026-11-01T13:19:46.018Z",
+    "updatedAt": "2026-11-01T13:19:46.018Z",
+    "isActive": true
+  },
+  {
+    "name": "Alex Johnson",
+    "email": "alex.johnson@college.edu",
+    "password": "$2b$10$Rz.lECiHjqqKM.oUmV7AdO/2pAlMZTyrFlOGRPG.P.a7BHev.aGUa",
+    "role": "student",
+    "_id": "6589b6c2aad89337eac747cd",
+    "createdAt": "2026-11-01T13:19:46.240Z",
+    "updatedAt": "2026-11-01T13:19:46.240Z",
+    "isActive": true
+  },
+  {
+    "name": "Rohan Sharma",
+    "email": "rohan.sharma@college.edu",
+    "password": "$2b$10$8aL23Rwq56J2PZz4Gne/z.oS7ukea54ELF5ZFaqRddK4dtXe2Tghi",
+    "role": "student",
+    "_id": "6724e8f5f1d62620dfd362d0",
+    "createdAt": "2026-11-01T13:21:25.085Z",
+    "updatedAt": "2026-11-01T13:21:25.085Z",
+    "isActive": true
+  },
+  {
+    "name": "Demo Deactivate Student",
+    "email": "deactivate.test@college.edu",
+    "password": "$2b$10$wuL2GEqeZpMIXPR7sRJ0xOlVFDErsofq.oA7l27IFpn80BdAm1IxK",
+    "role": "student",
+    "isActive": false,
+    "_id": "6899895d8e6599ec35e7592f",
+    "createdAt": "2026-11-01T13:21:30.724Z",
+    "updatedAt": "2026-11-01T13:21:30.881Z"
+  }
+]

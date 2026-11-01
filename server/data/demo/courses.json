@@ -1,0 +1,253 @@
+[
+  {
+    "title": "MongoDB Aggregation Masterclass",
+    "provider": "MongoDB University",
+    "description": "Deep dive into $match, $group, $lookup, and indexing optimization pipelines.",
+    "skillsCovered": [
+      "MongoDB",
+      "Database Indexing",
+      "NoSQL",
+      "Database"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "4 Hours",
+    "courseUrl": "https://learn.mongodb.com",
+    "_id": "022fe70502c2b37fe4ba21b4",
+    "createdAt": "2026-11-01T13:19:46.465Z",
+    "updatedAt": "2026-11-01T13:19:46.465Z",
+    "isActive": true
+  },
+  {
+    "title": "Docker & Containers for Full-Stack Developers",
+    "provider": "SkillBridge Tech Academy",
+    "description": "Learn containerizing Node.js and React apps, Dockerfiles, and multi-service docker-compose.",
+    "skillsCovered": [
+      "Docker",
+      "DevOps",
+      "Linux",
+      "Microservices"
+    ],
+    "difficulty": "Beginner",
+    "duration": "6 Hours",
+    "courseUrl": "https://skillbridge.edu/courses/docker",
+    "_id": "e1c356ba6e278e6552e88927",
+    "createdAt": "2026-11-01T13:19:46.465Z",
+    "updatedAt": "2026-11-01T13:19:46.465Z",
+    "isActive": true
+  },
+  {
+    "title": "Modern JavaScript (ES6+ Deep Dive)",
+    "provider": "JavaScript.info & SkillBridge",
+    "description": "Master closures, event loop, async/await, promises, and modern ES module features.",
+    "skillsCovered": [
+      "JavaScript",
+      "Programming Language",
+      "Frontend"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "8 Hours",
+    "courseUrl": "https://javascript.info",
+    "_id": "50831cc1229d8179df8e9bf5",
+    "createdAt": "2026-11-01T13:19:46.465Z",
+    "updatedAt": "2026-11-01T13:19:46.465Z",
+    "isActive": true
+  },
+  {
+    "title": "React.js State Management & Custom Hooks",
+    "provider": "Frontend Masters Curriculum",
+    "description": "Build enterprise React architectures with Context API, Redux Toolkit, and performance memoization.",
+    "skillsCovered": [
+      "React.js",
+      "Frontend",
+      "JavaScript"
+    ],
+    "difficulty": "Advanced",
+    "duration": "10 Hours",
+    "courseUrl": "https://react.dev",
+    "_id": "d41f7537bd8076c3454ef32b",
+    "createdAt": "2026-11-01T13:19:46.465Z",
+    "updatedAt": "2026-11-01T13:19:46.465Z",
+    "isActive": true
+  },
+  {
+    "title": "REST API Security & JWT Authentication in Node.js",
+    "provider": "Node Security Project",
+    "description": "Implement role-based access control, cryptographic password hashing, refresh tokens, and rate limiting.",
+    "skillsCovered": [
+      "Node.js",
+      "Express.js",
+      "JWT",
+      "Backend"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "5 Hours",
+    "courseUrl": "https://skillbridge.edu/courses/node-security",
+    "_id": "9ec3d51c703a89d6965284de",
+    "createdAt": "2026-11-01T13:19:46.466Z",
+    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "isActive": true
+  },
+  {
+    "title": "Java Spring Boot Microservices from Scratch",
+    "provider": "Java Code Academy",
+    "description": "Learn Spring Data JPA, Eureka Service Discovery, Spring Cloud Gateway, and Spring Security.",
+    "skillsCovered": [
+      "Java",
+      "Spring Boot",
+      "Backend",
+      "SQL"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "12 Hours",
+    "courseUrl": "https://spring.io/guides",
+    "_id": "6957ca34ef8af676322282f0",
+    "createdAt": "2026-11-01T13:19:46.466Z",
+    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "isActive": true
+  },
+  {
+    "title": "Python for Data Analysis & Automation",
+    "provider": "DataCamp Open Series",
+    "description": "Exploratory data analysis using NumPy, Pandas, Matplotlib, and automated reporting scripts.",
+    "skillsCovered": [
+      "Python",
+      "Pandas",
+      "Data Analysis",
+      "Data Visualization"
+    ],
+    "difficulty": "Beginner",
+    "duration": "7 Hours",
+    "courseUrl": "https://skillbridge.edu/courses/python-data",
+    "_id": "69e2a30cfeadbe70fd841b79",
+    "createdAt": "2026-11-01T13:19:46.466Z",
+    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "isActive": true
+  },
+  {
+    "title": "Relational Database Design & SQL Optimization",
+    "provider": "PostgreSQL Global Guild",
+    "description": "Master ACID transactions, schema normalization (1NF to 3NF), views, and query plan execution.",
+    "skillsCovered": [
+      "SQL",
+      "Database",
+      "PostgreSQL"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "6 Hours",
+    "courseUrl": "https://skillbridge.edu/courses/sql-optimization",
+    "_id": "befb2f2ae129881e62431952",
+    "createdAt": "2026-11-01T13:19:46.466Z",
+    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "isActive": true
+  },
+  {
+    "title": "Unit & Integration Testing with Jest and RTL",
+    "provider": "Testing JavaScript Series",
+    "description": "Write maintainable test suites for React components and Express API routes with mock assertions.",
+    "skillsCovered": [
+      "Jest",
+      "Unit Testing",
+      "React.js",
+      "Node.js"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "4 Hours",
+    "courseUrl": "https://skillbridge.edu/courses/testing",
+    "_id": "6978a36afd9eebbd9e5753ad",
+    "createdAt": "2026-11-01T13:19:46.466Z",
+    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "isActive": true
+  },
+  {
+    "title": "Git Version Control & GitHub Team Workflows",
+    "provider": "GitHub Education",
+    "description": "Master branch strategies, rebasing, pull request reviews, and GitHub Actions automated checks.",
+    "skillsCovered": [
+      "Git",
+      "GitHub",
+      "DevOps"
+    ],
+    "difficulty": "Beginner",
+    "duration": "3 Hours",
+    "courseUrl": "https://git-scm.com/book/en/v2",
+    "_id": "3196fafc73e5953e1c54ec0c",
+    "createdAt": "2026-11-01T13:19:46.466Z",
+    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "isActive": true
+  },
+  {
+    "title": "Redux Toolkit & Modern Global State Architecture",
+    "provider": "Redux Core Team & SkillBridge",
+    "description": "Master Redux Toolkit (RTK), slices, createAsyncThunk, selectors, and RTK Query to manage complex global frontend state with high performance.",
+    "skillsCovered": [
+      "Redux",
+      "React.js",
+      "State Management",
+      "Frontend",
+      "JavaScript"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "6 Hours",
+    "courseUrl": "https://redux-toolkit.js.org/tutorials/quick-start",
+    "_id": "443aa3b33e4f3adde8d1c8fd",
+    "createdAt": "2026-11-01T13:19:46.466Z",
+    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "isActive": true
+  },
+  {
+    "title": "Modern Responsive UI with Tailwind CSS",
+    "provider": "Tailwind Labs & Frontend Masters",
+    "description": "Build fast, highly responsive, production-ready interfaces using Tailwind utility-first classes, flexbox/grid layouts, dark mode, and component abstraction.",
+    "skillsCovered": [
+      "Tailwind CSS",
+      "CSS3",
+      "Frontend",
+      "Responsive Design",
+      "HTML5"
+    ],
+    "difficulty": "Beginner",
+    "duration": "5 Hours",
+    "courseUrl": "https://tailwindcss.com/docs/utility-first",
+    "_id": "217efbcda1d718318f0bd115",
+    "createdAt": "2026-11-01T13:19:46.466Z",
+    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "isActive": true
+  },
+  {
+    "title": "TypeScript Fundamentals for React Developers",
+    "provider": "TypeScript Official Guild",
+    "description": "Learn static typing for modern JavaScript: interfaces, generics, union types, typing React props & state, and building type-safe component APIs.",
+    "skillsCovered": [
+      "TypeScript",
+      "JavaScript",
+      "Frontend",
+      "React.js"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "7 Hours",
+    "courseUrl": "https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html",
+    "_id": "25b6890dca23f964b1b16fb4",
+    "createdAt": "2026-11-01T13:19:46.466Z",
+    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "isActive": true
+  },
+  {
+    "title": "Enterprise Frontend Stack: React, Redux & TypeScript",
+    "provider": "Frontend Masters & SkillBridge",
+    "description": "End-to-end frontend engineering: combining React.js with TypeScript, Redux Toolkit, and Tailwind CSS for production enterprise web applications.",
+    "skillsCovered": [
+      "React.js",
+      "Redux",
+      "TypeScript",
+      "Tailwind CSS",
+      "Frontend"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "12 Hours",
+    "courseUrl": "https://react.dev/learn/typescript",
+    "_id": "2075e47f06f7a6289f2dec40",
+    "createdAt": "2026-11-01T13:19:46.466Z",
+    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "isActive": true
+  }
+]

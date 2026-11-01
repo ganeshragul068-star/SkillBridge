@@ -1,0 +1,418 @@
+[
+  {
+    "title": "React.js Component Architecture & Hooks Assessment",
+    "skill": "React.js",
+    "description": "Test your understanding of component lifecycle, state management, useEffect dependencies, and performance optimizations.",
+    "duration": 20,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionText": "Which React hook should be used to avoid recalculating an expensive computation on every render?",
+        "options": [
+          "useEffect",
+          "useMemo",
+          "useCallback",
+          "useRef"
+        ],
+        "correctAnswer": 1,
+        "explanation": "useMemo returns a memoized value that only recalculates when one of its specified dependencies changes.",
+        "marks": 1
+      },
+      {
+        "questionText": "What is the primary difference between controlled and uncontrolled form components in React?",
+        "options": [
+          "Controlled components use Redux while uncontrolled use local state",
+          "Controlled components have their value handled by React state, while uncontrolled rely on DOM refs",
+          "Uncontrolled components are faster and cannot have default values",
+          "Controlled components only work with class components"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In a controlled component, form data is handled by React state. In uncontrolled components, form data is handled by the DOM itself using refs.",
+        "marks": 1
+      },
+      {
+        "questionText": "When does the cleanup function returned inside a useEffect hook execute?",
+        "options": [
+          "Only when the browser window closes",
+          "Before the component re-renders or unmounts",
+          "Synchronously before the initial render",
+          "Only when an uncaught error occurs in the component"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The cleanup function runs before the component is removed from the UI (unmounts) and prior to running the effect again on re-render.",
+        "marks": 1
+      }
+    ],
+    "_id": "670c373a43295bd588480c9f",
+    "createdAt": "2026-11-01T13:19:46.470Z",
+    "updatedAt": "2026-11-01T13:19:46.470Z",
+    "isActive": true
+  },
+  {
+    "title": "Node.js & Express RESTful APIs Diagnostic",
+    "skill": "Node.js",
+    "description": "Evaluate your knowledge of the Node.js event loop, Express routing, middleware execution order, and error handling.",
+    "duration": 20,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionText": "In an Express application, what parameter signature distinguishes error-handling middleware from regular middleware?",
+        "options": [
+          "(req, res, next)",
+          "(err, req, res, next)",
+          "(req, res, error)",
+          "(app, req, res)"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Express recognizes error-handling middleware by its four arguments: (err, req, res, next).",
+        "marks": 1
+      },
+      {
+        "questionText": "Which HTTP method should be used when an API endpoint performs a partial update of a resource?",
+        "options": [
+          "PUT",
+          "POST",
+          "PATCH",
+          "UPDATE"
+        ],
+        "correctAnswer": 2,
+        "explanation": "PATCH is standard for partial updates, whereas PUT is traditionally used for replacing the entire entity.",
+        "marks": 1
+      },
+      {
+        "questionText": "What is the purpose of process.nextTick() in Node.js?",
+        "options": [
+          "It delays execution until the next calendar day",
+          "It schedules a callback to be run at the very end of the current phase of the event loop before I/O",
+          "It creates a new thread in the worker pool",
+          "It pauses execution for 100 milliseconds"
+        ],
+        "correctAnswer": 1,
+        "explanation": "process.nextTick() queues a callback function to be invoked immediately after the current operation finishes and before the event loop continues.",
+        "marks": 1
+      }
+    ],
+    "_id": "985ffd02b09ed70f309d01e8",
+    "createdAt": "2026-11-01T13:19:46.471Z",
+    "updatedAt": "2026-11-01T13:19:46.471Z",
+    "isActive": true
+  },
+  {
+    "title": "Python Core & Data Analysis Fundamentals",
+    "skill": "Python",
+    "description": "Assess list comprehensions, dictionary operations, Pandas DataFrame manipulation, and exception handling.",
+    "duration": 15,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionText": "In Pandas, which method is used to remove rows containing null/NaN values from a DataFrame?",
+        "options": [
+          "df.clean()",
+          "df.dropna()",
+          "df.strip_na()",
+          "df.remove_empty()"
+        ],
+        "correctAnswer": 1,
+        "explanation": "df.dropna() drops rows (or columns) that contain missing or NaN values.",
+        "marks": 1
+      },
+      {
+        "questionText": "What does the *args parameter syntax in a Python function definition permit?",
+        "options": [
+          "Keyword arguments only",
+          "An arbitrary number of positional arguments passed as a tuple",
+          "Mandatory pointers to memory addresses",
+          "Array slicing in the function body"
+        ],
+        "correctAnswer": 1,
+        "explanation": "*args allows passing a variable number of positional arguments to a function, accessible as a tuple.",
+        "marks": 1
+      }
+    ],
+    "_id": "0a04ebb36d77a16b902e39f7",
+    "createdAt": "2026-11-01T13:19:46.471Z",
+    "updatedAt": "2026-11-01T13:19:46.471Z",
+    "isActive": true
+  },
+  {
+    "title": "Java Core & Object-Oriented Principles",
+    "skill": "Java",
+    "description": "Test OOP fundamentals (Inheritance, Polymorphism, Abstraction, Encapsulation), Collections, and Exception Handling.",
+    "duration": 20,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionText": "Which collection implementation in Java maintains elements in sorted order based on their natural comparison or a Comparator?",
+        "options": [
+          "ArrayList",
+          "HashSet",
+          "TreeSet",
+          "LinkedList"
+        ],
+        "correctAnswer": 2,
+        "explanation": "TreeSet is part of the NavigableSet interface in Java and guarantees that elements are maintained in sorted ascending order.",
+        "marks": 1
+      },
+      {
+        "questionText": "Can an abstract class in Java have concrete methods with complete method bodies?",
+        "options": [
+          "No, abstract classes can only contain method signatures",
+          "Yes, an abstract class can contain both abstract and concrete methods",
+          "Only if the class is declared static",
+          "Only in Java versions prior to Java 7"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Abstract classes in Java can have fully implemented concrete methods alongside abstract methods.",
+        "marks": 1
+      }
+    ],
+    "_id": "c6bf7a50a85a7d3e7fe3b338",
+    "createdAt": "2026-11-01T13:19:46.471Z",
+    "updatedAt": "2026-11-01T13:19:46.471Z",
+    "isActive": true
+  },
+  {
+    "title": "MongoDB & Database Architecture Assessment",
+    "skill": "MongoDB",
+    "description": "Assess schema design patterns, aggregation stages, compound indexing, and embedding versus referencing tradeoffs.",
+    "duration": 20,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionText": "In a MongoDB aggregation pipeline, which stage performs a left outer join with another collection in the same database?",
+        "options": [
+          "$join",
+          "$lookup",
+          "$merge",
+          "$project"
+        ],
+        "correctAnswer": 1,
+        "explanation": "$lookup performs an equality match or subquery join between documents from the input and another collection.",
+        "marks": 1
+      },
+      {
+        "questionText": "What is the primary benefit of creating a compound index on { department: 1, graduationYear: -1 } in MongoDB?",
+        "options": [
+          "It encrypts documents belonging to both fields",
+          "It allows queries filtering by department, or by department AND graduationYear, to use index scans instead of collection scans",
+          "It automatically converts strings to numbers",
+          "It restricts documents from exceeding 16MB"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A compound index supports queries that match on the prefix (department) or both fields in the index key pattern.",
+        "marks": 1
+      }
+    ],
+    "_id": "973fc00f9f1d9c12745039e1",
+    "createdAt": "2026-11-01T13:19:46.471Z",
+    "updatedAt": "2026-11-01T13:19:46.471Z",
+    "isActive": true
+  },
+  {
+    "title": "Modern JavaScript (ES6+ & Async Architecture)",
+    "skill": "JavaScript",
+    "category": "Programming Languages",
+    "difficulty": "Intermediate",
+    "description": "Test your understanding of JavaScript closures, prototypical inheritance, event loop phases, and async/await mechanics.",
+    "duration": 20,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionText": "What is the output of `typeof NaN` in JavaScript?",
+        "options": [
+          "undefined",
+          "number",
+          "nan",
+          "object"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In JavaScript, NaN represents \"Not-a-Number\", but its primitive data type according to the ECMAScript spec is number.",
+        "marks": 1
+      },
+      {
+        "questionText": "Which statement correctly describes how closures function in JavaScript?",
+        "options": [
+          "Closures prevent functions from accessing variables defined outside their body",
+          "A closure is the combination of a function bundled together with references to its surrounding lexical environment",
+          "Closures are only created when using arrow functions",
+          "Closures immediately execute and discard local memory variables"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A closure gives a function access to its outer scope from an inner function, preserved across invocations.",
+        "marks": 1
+      },
+      {
+        "questionText": "Which event loop queue takes priority when synchronous code finishes execution?",
+        "options": [
+          "Task Queue (macrotasks: setTimeout/setInterval)",
+          "Microtask Queue (Promises, queueMicrotask)",
+          "I/O Polling Phase",
+          "Check Phase (setImmediate)"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The microtask queue (promise callbacks) is drained completely before the next macrotask is processed.",
+        "marks": 1
+      }
+    ],
+    "_id": "7e80ea9dda036548f1c736a6",
+    "createdAt": "2026-11-01T13:19:46.471Z",
+    "updatedAt": "2026-11-01T13:19:46.471Z",
+    "isActive": true
+  },
+  {
+    "title": "C++ Systems & Memory Management Competency",
+    "skill": "C++",
+    "category": "Programming Languages",
+    "difficulty": "Advanced",
+    "description": "Assess pointer arithmetic, dynamic heap allocation, references, virtual destructors, and RAII principles.",
+    "duration": 25,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionText": "Why should a base class containing virtual methods declare a virtual destructor in C++?",
+        "options": [
+          "To speed up compilation times",
+          "To guarantee that deleting an object through a base class pointer correctly invokes the derived class destructor",
+          "To make the class abstract and non-instantiable",
+          "To allow private variables to be inherited"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Without a virtual destructor, deleting a derived object via a base pointer causes undefined behavior and resource leaks.",
+        "marks": 1
+      },
+      {
+        "questionText": "Which smart pointer in modern C++ (C++11+) maintains exclusive ownership of a dynamically allocated heap resource?",
+        "options": [
+          "std::shared_ptr",
+          "std::unique_ptr",
+          "std::weak_ptr",
+          "std::auto_ptr"
+        ],
+        "correctAnswer": 1,
+        "explanation": "std::unique_ptr enforces exclusive ownership; it cannot be copied, only moved via std::move.",
+        "marks": 1
+      }
+    ],
+    "_id": "43315933ad4c87249acdf3fa",
+    "createdAt": "2026-11-01T13:19:46.472Z",
+    "updatedAt": "2026-11-01T13:19:46.472Z",
+    "isActive": true
+  },
+  {
+    "title": "Relational Database Design & SQL Querying Assessment",
+    "skill": "SQL",
+    "category": "Database",
+    "difficulty": "Intermediate",
+    "description": "Test complex SQL JOIN operations, GROUP BY aggregations, HAVING clauses, subqueries, and ACID properties.",
+    "duration": 20,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionText": "What is the primary difference between WHERE and HAVING clauses in an SQL query?",
+        "options": [
+          "WHERE is used for numeric comparisons, while HAVING is used for string comparisons",
+          "WHERE filters individual rows before aggregation; HAVING filters aggregated groups after GROUP BY",
+          "HAVING can only be used with SELECT * statements",
+          "WHERE requires an inner join to be present"
+        ],
+        "correctAnswer": 1,
+        "explanation": "WHERE filters rows prior to grouping; HAVING evaluates aggregate functions like COUNT() or SUM() after grouping.",
+        "marks": 1
+      },
+      {
+        "questionText": "Which JOIN returns all records from the left table and matched records from the right table, filling with NULL when no match exists?",
+        "options": [
+          "INNER JOIN",
+          "LEFT OUTER JOIN",
+          "FULL OUTER JOIN",
+          "CROSS JOIN"
+        ],
+        "correctAnswer": 1,
+        "explanation": "LEFT JOIN (or LEFT OUTER JOIN) preserves all rows from the left table regardless of whether a matching record exists on the right.",
+        "marks": 1
+      }
+    ],
+    "_id": "c2c4e196c224ea385dca0d87",
+    "createdAt": "2026-11-01T13:19:46.472Z",
+    "updatedAt": "2026-11-01T13:19:46.472Z",
+    "isActive": true
+  },
+  {
+    "title": "HTML5 Semantic Markup & Modern CSS Layouts",
+    "skill": "HTML and CSS",
+    "category": "Frontend Development",
+    "difficulty": "Beginner",
+    "description": "Test HTML5 semantic structure, CSS Flexbox, CSS Grid, media queries, accessibility, and the CSS box model.",
+    "duration": 15,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionText": "When `box-sizing: border-box` is set on an element, what is included in the total declared width and height?",
+        "options": [
+          "Content area only (padding and border are added externally)",
+          "Content, padding, and border (only margin is outside)",
+          "Content and margin only",
+          "Border and margin only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "border-box includes content, padding, and border within the specified element width and height.",
+        "marks": 1
+      },
+      {
+        "questionText": "In CSS Flexbox, which property aligns items along the cross axis?",
+        "options": [
+          "justify-content",
+          "align-items",
+          "flex-direction",
+          "flex-wrap"
+        ],
+        "correctAnswer": 1,
+        "explanation": "align-items controls item alignment along the cross axis, while justify-content aligns along the main axis.",
+        "marks": 1
+      }
+    ],
+    "_id": "bb756a0d510b0e7db56f1c31",
+    "createdAt": "2026-11-01T13:19:46.472Z",
+    "updatedAt": "2026-11-01T13:19:46.472Z",
+    "isActive": true
+  },
+  {
+    "title": "Data Structures & Algorithms Core Diagnostic",
+    "skill": "Data Structures and Algorithms",
+    "category": "Data Structures",
+    "difficulty": "Intermediate",
+    "description": "Evaluate Big-O time and space complexity, Linked Lists, Binary Search Trees, Stacks, Queues, and Graphs.",
+    "duration": 25,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionText": "What is the average-case time complexity of searching for an element in a balanced Binary Search Tree (BST)?",
+        "options": [
+          "O(1)",
+          "O(log n)",
+          "O(n)",
+          "O(n log n)"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In a balanced BST, each comparison halves the search space, giving an average search time complexity of O(log n).",
+        "marks": 1
+      },
+      {
+        "questionText": "Which data structure operates on a Last-In, First-Out (LIFO) order?",
+        "options": [
+          "Queue",
+          "Stack",
+          "Linked List",
+          "Heap"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A Stack follows the LIFO principle where the most recently inserted item is the first one removed.",
+        "marks": 1
+      }
+    ],
+    "_id": "dcdd025501d16f54ba9110a3",
+    "createdAt": "2026-11-01T13:19:46.472Z",
+    "updatedAt": "2026-11-01T13:19:46.472Z",
+    "isActive": true
+  }
+]

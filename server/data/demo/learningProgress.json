@@ -1,0 +1,49 @@
+[
+  {
+    "studentId": "6589b6c2aad89337eac747cd",
+    "skill": "JavaScript",
+    "currentProficiency": "Advanced",
+    "targetProficiency": "Expert",
+    "progressPercentage": 85,
+    "startedCourses": [
+      "50831cc1229d8179df8e9bf5"
+    ],
+    "completedCourses": [
+      "50831cc1229d8179df8e9bf5"
+    ],
+    "notes": "Passed JavaScript diagnostic with expert standing.",
+    "_id": "0c25860e15480fdc56b17420",
+    "createdAt": "2026-11-01T13:19:46.483Z",
+    "updatedAt": "2026-11-01T13:19:46.483Z"
+  },
+  {
+    "studentId": "6589b6c2aad89337eac747cd",
+    "skill": "React.js",
+    "currentProficiency": "Advanced",
+    "targetProficiency": "Expert",
+    "progressPercentage": 75,
+    "startedCourses": [
+      "d41f7537bd8076c3454ef32b"
+    ],
+    "completedCourses": [],
+    "notes": "Currently working through custom hooks and performance optimization.",
+    "_id": "554b4b98e25eca40bcd77aa3",
+    "createdAt": "2026-11-01T13:19:46.487Z",
+    "updatedAt": "2026-11-01T13:19:46.487Z"
+  },
+  {
+    "studentId": "6589b6c2aad89337eac747cd",
+    "skill": "Node.js",
+    "currentProficiency": "Intermediate",
+    "targetProficiency": "Advanced",
+    "progressPercentage": 60,
+    "startedCourses": [
+      "9ec3d51c703a89d6965284de"
+    ],
+    "completedCourses": [],
+    "notes": "API architecture and secure JWT middleware practice.",
+    "_id": "ff32b45c6ff5026f3483b84b",
+    "createdAt": "2026-11-01T13:19:46.491Z",
+    "updatedAt": "2026-11-01T13:19:46.491Z"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "studentId": "6589b6c2aad89337eac747cd",
+    "mentorId": "4b4e51e1c30a7b4c8b35e12c",
+    "message": "Hello, I would love guidance on React performance optimization and full-stack system design.",
+    "status": "Accepted",
+    "statusChangedAt": "2026-11-01T13:21:36.175Z",
+    "_id": "3cdc7ac2aaf4215c493f29f1",
+    "createdAt": "2026-11-01T13:21:36.165Z",
+    "updatedAt": "2026-11-01T13:21:36.175Z",
+    "mentorResponse": "Welcome aboard! I look forward to our first session on Saturday."
+  },
+  {
+    "studentId": "6589b6c2aad89337eac747cd",
+    "mentorId": "d5bf4f40a073a8b7751a8744",
+    "message": "Interested in DevOps roadmap guidance.",
+    "status": "Rejected",
+    "statusChangedAt": "2026-11-01T13:21:36.183Z",
+    "_id": "975eedcbc5269e35e3bbeb83",
+    "createdAt": "2026-11-01T13:21:36.180Z",
+    "updatedAt": "2026-11-01T13:21:36.183Z",
+    "mentorResponse": "My schedule is currently full for the upcoming quarter. Best wishes on your learning!"
+  },
+  {
+    "studentId": "6589b6c2aad89337eac747cd",
+    "mentorId": "042c9ab4ff6aa3b0fc0113ff",
+    "message": "Requesting AI fundamentals review.",
+    "status": "Cancelled",
+    "statusChangedAt": "2026-11-01T13:21:36.193Z",
+    "_id": "30c4e0ade2ea5f31be3a0943",
+    "createdAt": "2026-11-01T13:21:36.186Z",
+    "updatedAt": "2026-11-01T13:21:36.193Z"
+  }
+]

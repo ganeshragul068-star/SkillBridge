@@ -1,0 +1,355 @@
+.dashboard-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+  background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-navy);
+}
+
+.welcome-text h2 {
+  color: var(--white);
+  font-size: 1.65rem;
+  margin-bottom: 0.4rem;
+}
+
+.welcome-text p {
+  color: var(--slate-300);
+  font-size: 0.95rem;
+  max-width: 620px;
+}
+
+.welcome-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* Prototype Badge Strip */
+.prototype-badge-strip {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+/* Stats Grid */
+.stats-grid {
+  gap: 1.25rem;
+}
+
+/* Main Dashboard Two Columns */
+.dashboard-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+.dashboard-col-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.dashboard-col-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* Dashboard Card */
+.dash-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.dash-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+}
+
+.dash-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+.dash-card-sub {
+  font-size: 0.85rem;
+  color: var(--slate-500);
+  margin-top: 0.2rem;
+}
+
+.readiness-big-score {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary-light);
+}
+
+.view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  white-space: nowrap;
+}
+
+.progress-section {
+  margin-bottom: 1.5rem;
+}
+
+.readiness-breakdown-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.readiness-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.item-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--slate-600);
+}
+
+/* Next Steps */
+.next-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--bg-surface-subtle);
+  border-radius: var(--radius-md);
+}
+
+.step-status-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-status-icon.warning {
+  background-color: var(--warning-bg);
+  color: var(--warning);
+}
+
+.step-status-icon.primary {
+  background-color: var(--accent-light);
+  color: var(--primary-light);
+}
+
+.step-status-icon.success {
+  background-color: var(--success-bg);
+  color: var(--success);
+}
+
+.step-details {
+  flex-grow: 1;
+}
+
+.step-details h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+.step-details p {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+}
+
+/* Dashboard Jobs List */
+.dashboard-jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Profile Quick Card */
+.profile-quick-card {
+  text-align: center;
+}
+
+.profile-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.profile-big-avatar {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--navy-900), var(--primary-light));
+  color: var(--white);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.profile-full-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+.profile-role-tag {
+  font-size: 0.775rem;
+  font-weight: 700;
+  background-color: var(--accent-light);
+  color: var(--accent-sky);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.profile-college-name {
+  font-size: 0.825rem;
+  color: var(--slate-500);
+}
+
+.profile-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.p-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-stat-val {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+.p-stat-lbl {
+  font-size: 0.7rem;
+  color: var(--slate-400);
+  text-transform: uppercase;
+}
+
+/* Timeline */
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.timeline-list::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 3px;
+  width: 2px;
+  background-color: var(--border-color);
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1rem;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  border: 2px solid var(--white);
+}
+
+.timeline-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy-900);
+}
+
+.timeline-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.timeline-time {
+  color: var(--slate-400);
+}
+
+.timeline-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .readiness-breakdown-grid {
+    grid-template-columns: 1fr;
+  }
+  .welcome-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

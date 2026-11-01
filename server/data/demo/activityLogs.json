@@ -1,0 +1,222 @@
+[
+  {
+    "action": "JOB_CREATED",
+    "targetType": "job",
+    "targetId": "95eccc556d25c1ecf368a599",
+    "targetTitle": "Frontend React Developer Intern at TechNova Labs",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {
+      "jobType": "Internship",
+      "workMode": "Remote"
+    },
+    "_id": "aaee10e172237fee33c0eccd",
+    "createdAt": "2026-11-01T13:19:46.503Z",
+    "updatedAt": "2026-11-01T13:19:46.503Z"
+  },
+  {
+    "action": "ASSESSMENT_CREATED",
+    "targetType": "assessment",
+    "targetId": "670c373a43295bd588480c9f",
+    "targetTitle": "React.js Component Architecture & Hooks Assessment",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {
+      "skill": "React.js",
+      "duration": 20
+    },
+    "_id": "f0cb419e1aad57dc5f886dc7",
+    "createdAt": "2026-11-01T13:19:46.508Z",
+    "updatedAt": "2026-11-01T13:19:46.508Z"
+  },
+  {
+    "action": "STUDENT_ACTIVATED",
+    "targetType": "student",
+    "targetId": "6589b6c2aad89337eac747cd",
+    "targetTitle": "Alex Johnson",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {
+      "studentEmail": "alex.johnson@college.edu",
+      "reason": "Enrolled in 2026 campus placement drive"
+    },
+    "_id": "91d43896f13facc471094e82",
+    "createdAt": "2026-11-01T13:19:46.512Z",
+    "updatedAt": "2026-11-01T13:19:46.512Z"
+  },
+  {
+    "action": "STUDENT_DEACTIVATED",
+    "targetType": "student",
+    "targetId": "6899895d8e6599ec35e7592f",
+    "targetTitle": "Demo Deactivate Student",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {
+      "studentEmail": "deactivate.test@college.edu",
+      "previousStatus": true,
+      "newStatus": false,
+      "reason": "Verification test"
+    },
+    "_id": "3b135a808448b5a891a64f3b",
+    "createdAt": "2026-11-01T13:21:30.871Z",
+    "updatedAt": "2026-11-01T13:21:30.871Z"
+  },
+  {
+    "action": "STUDENT_ACTIVATED",
+    "targetType": "student",
+    "targetId": "6899895d8e6599ec35e7592f",
+    "targetTitle": "Demo Deactivate Student",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {
+      "studentEmail": "deactivate.test@college.edu",
+      "previousStatus": false,
+      "newStatus": true,
+      "reason": "Admin administrative status toggle"
+    },
+    "_id": "603897a33727db6e0d651f34",
+    "createdAt": "2026-11-01T13:21:30.877Z",
+    "updatedAt": "2026-11-01T13:21:30.877Z"
+  },
+  {
+    "action": "JOB_CREATED",
+    "targetType": "job",
+    "targetId": "71fa1e669d31bc0ec9489b4c",
+    "targetTitle": "Platform QA Engineer Trainee at SkillBridge Core Systems",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {
+      "jobType": "Full-time",
+      "workMode": "Hybrid"
+    },
+    "_id": "af5da3f76510e142e9b190fa",
+    "createdAt": "2026-11-01T13:21:30.898Z",
+    "updatedAt": "2026-11-01T13:21:30.898Z"
+  },
+  {
+    "action": "JOB_UPDATED",
+    "targetType": "job",
+    "targetId": "71fa1e669d31bc0ec9489b4c",
+    "targetTitle": "Platform QA Engineer Trainee at SkillBridge Core Systems",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {
+      "updatedFields": [
+        "salary",
+        "openings"
+      ]
+    },
+    "_id": "b606d05a54466ce9d4b7a5d8",
+    "createdAt": "2026-11-01T13:21:30.905Z",
+    "updatedAt": "2026-11-01T13:21:30.905Z"
+  },
+  {
+    "action": "JOB_STATUS_CHANGED",
+    "targetType": "job",
+    "targetId": "71fa1e669d31bc0ec9489b4c",
+    "targetTitle": "Platform QA Engineer Trainee at SkillBridge Core Systems",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {
+      "newStatus": "Closed"
+    },
+    "_id": "4729bff6a12539dc4acde7f4",
+    "createdAt": "2026-11-01T13:21:30.913Z",
+    "updatedAt": "2026-11-01T13:21:30.913Z"
+  },
+  {
+    "action": "JOB_DELETED",
+    "targetType": "job",
+    "targetId": "71fa1e669d31bc0ec9489b4c",
+    "targetTitle": "Platform QA Engineer Trainee at SkillBridge Core Systems",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {},
+    "_id": "472245b649cd3464ea4e71d2",
+    "createdAt": "2026-11-01T13:21:30.919Z",
+    "updatedAt": "2026-11-01T13:21:30.919Z"
+  },
+  {
+    "action": "APPLICATION_STATUS_UPDATED",
+    "targetType": "application",
+    "targetId": "65e080000000000000000001",
+    "targetTitle": "Application for Role by Student",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {
+      "previousStatus": "Shortlisted",
+      "newStatus": "Shortlisted",
+      "notes": "Top candidate matching React & Node criteria"
+    },
+    "_id": "4af8c6f2d19bb5d2d4afdcd1",
+    "createdAt": "2026-11-01T13:21:30.929Z",
+    "updatedAt": "2026-11-01T13:21:30.929Z"
+  },
+  {
+    "action": "COURSE_CREATED",
+    "targetType": "course",
+    "targetId": "77df4035818118e9dcef7950",
+    "targetTitle": "Advanced Kubernetes & Cloud Native Patterns",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {
+      "provider": "Cloud Native Foundation",
+      "difficulty": "Advanced"
+    },
+    "_id": "cdfb193ecc783ff8254365f3",
+    "createdAt": "2026-11-01T13:21:30.936Z",
+    "updatedAt": "2026-11-01T13:21:30.936Z"
+  },
+  {
+    "action": "COURSE_UPDATED",
+    "targetType": "course",
+    "targetId": "77df4035818118e9dcef7950",
+    "targetTitle": "Advanced Kubernetes & Cloud Native Patterns",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {},
+    "_id": "61938774174e8976a5458023",
+    "createdAt": "2026-11-01T13:21:30.943Z",
+    "updatedAt": "2026-11-01T13:21:30.943Z"
+  },
+  {
+    "action": "COURSE_STATUS_CHANGED",
+    "targetType": "course",
+    "targetId": "77df4035818118e9dcef7950",
+    "targetTitle": "Advanced Kubernetes & Cloud Native Patterns",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {
+      "isActive": false
+    },
+    "_id": "1e1375e98701e80841cc2837",
+    "createdAt": "2026-11-01T13:21:30.954Z",
+    "updatedAt": "2026-11-01T13:21:30.954Z"
+  },
+  {
+    "action": "COURSE_DELETED",
+    "targetType": "course",
+    "targetId": "77df4035818118e9dcef7950",
+    "targetTitle": "Advanced Kubernetes & Cloud Native Patterns",
+    "performedBy": "96cc7d0039f3cb7e4976c243",
+    "performedByName": "SkillBridge Administrator",
+    "performedByRole": "admin",
+    "details": {},
+    "_id": "772b8a4f2caa9f2f139c58b6",
+    "createdAt": "2026-11-01T13:21:30.960Z",
+    "updatedAt": "2026-11-01T13:21:30.960Z"
+  }
+]

@@ -1,0 +1,164 @@
+.auth-page-root {
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.auth-card-container {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.auth-form-side {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-header {
+  margin-bottom: 2rem;
+}
+
+.auth-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--navy-900);
+}
+
+.auth-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.auth-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.85rem;
+  color: var(--slate-600);
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.auth-checkbox-label input {
+  margin-top: 3px;
+}
+
+.auth-footer-prompt {
+  margin-top: 1.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--slate-600);
+}
+
+.auth-footer-prompt a {
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+/* Sidebar / Benefits side */
+.auth-benefits-side {
+  background: linear-gradient(135deg, var(--navy-950) 0%, var(--navy-850) 100%);
+  color: var(--white);
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.benefits-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.benefits-desc {
+  font-size: 0.925rem;
+  color: var(--slate-300);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.benefit-icon-box {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.benefit-item h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.benefit-item p {
+  font-size: 0.825rem;
+  color: var(--slate-300);
+  margin-top: 0.15rem;
+}
+
+.auth-demo-badge {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+}
+
+@media (max-width: 860px) {
+  .auth-card-container {
+    grid-template-columns: 1fr;
+  }
+  .auth-benefits-side {
+    display: none;
+  }
+  .auth-form-side {
+    padding: 2rem 1.5rem;
+  }
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+}

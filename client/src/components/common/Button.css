@@ -1,0 +1,110 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Sizes */
+.btn-sm {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.825rem;
+}
+
+.btn-md {
+  padding: 0.65rem 1.25rem;
+  font-size: 0.925rem;
+}
+
+.btn-lg {
+  padding: 0.85rem 1.65rem;
+  font-size: 1.05rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* Variants */
+.btn-primary {
+  background-color: var(--primary-light);
+  color: var(--white);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--primary);
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn-navy {
+  background-color: var(--navy-900);
+  color: var(--white);
+  box-shadow: 0 2px 6px rgba(10, 25, 47, 0.2);
+}
+
+.btn-navy:hover:not(:disabled) {
+  background-color: var(--navy-800);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--slate-100);
+  color: var(--navy-900);
+  border-color: var(--border-color);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: var(--slate-200);
+  color: var(--navy-950);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--navy-800);
+  color: var(--navy-800);
+}
+
+.btn-outline:hover:not(:disabled) {
+  background-color: rgba(10, 25, 47, 0.05);
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.btn-outline-white:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--white);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--navy-800);
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background-color: rgba(10, 25, 47, 0.05);
+}
+
+.btn-disabled, .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.btn-icon {
+  flex-shrink: 0;
+}

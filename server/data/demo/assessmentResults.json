@@ -1,0 +1,33 @@
+[
+  {
+    "studentId": "6589b6c2aad89337eac747cd",
+    "assessmentId": "670c373a43295bd588480c9f",
+    "score": 3,
+    "totalMarks": 3,
+    "percentage": 100,
+    "passed": true,
+    "status": "completed",
+    "proficiencyLevel": "Expert",
+    "completedAt": "2026-10-31T13:19:46.478Z",
+    "answers": [
+      {
+        "questionIndex": 0,
+        "selectedAnswer": 1,
+        "isCorrect": true
+      },
+      {
+        "questionIndex": 1,
+        "selectedAnswer": 1,
+        "isCorrect": true
+      },
+      {
+        "questionIndex": 2,
+        "selectedAnswer": 1,
+        "isCorrect": true
+      }
+    ],
+    "_id": "af438167e3bf34eb58eaa0cf",
+    "createdAt": "2026-11-01T13:19:46.478Z",
+    "updatedAt": "2026-11-01T13:19:46.478Z"
+  }
+]

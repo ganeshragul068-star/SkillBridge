@@ -1,0 +1,211 @@
+.job-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.job-card-featured {
+  border-color: #93c5fd;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.featured-banner {
+  position: absolute;
+  top: -10px;
+  right: 1.5rem;
+  background: var(--navy-900);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-full);
+}
+
+.job-card-top {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.job-company-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--navy-900), var(--primary-light));
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.job-header-info {
+  flex-grow: 1;
+}
+
+.job-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.job-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+.job-company-name {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 0.15rem;
+}
+
+.match-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.match-high {
+  background-color: var(--success-bg);
+  color: var(--success);
+}
+
+.match-medium {
+  background-color: var(--warning-bg);
+  color: var(--warning);
+}
+
+.match-low {
+  background-color: var(--slate-100);
+  color: var(--slate-600);
+}
+
+.job-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: var(--bg-surface-subtle);
+  border-radius: var(--radius-md);
+}
+
+.job-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.825rem;
+  color: var(--slate-600);
+}
+
+.stipend-item {
+  font-weight: 600;
+  color: var(--navy-900);
+}
+
+.job-description {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.job-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.job-skill-tag {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--slate-100);
+  color: var(--navy-800);
+  border: 1px solid var(--border-color);
+  font-weight: 500;
+}
+
+.job-card-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.job-posted-time {
+  font-size: 0.775rem;
+  color: var(--slate-400);
+}
+
+.job-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.job-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.job-title-link:hover .job-title {
+  color: var(--blue-600);
+}
+
+.job-save-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem;
+  cursor: pointer;
+  color: var(--slate-400);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.job-save-btn:hover {
+  color: var(--navy-900);
+  border-color: var(--navy-900);
+}
+
+.job-save-btn.is-saved {
+  color: #f59e0b;
+  border-color: #fcd34d;
+  background-color: #fef3c7;
+}

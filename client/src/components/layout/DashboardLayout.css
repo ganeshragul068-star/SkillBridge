@@ -1,0 +1,215 @@
+.dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.dashboard-main-area {
+  flex-grow: 1;
+  margin-left: var(--sidebar-width);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: margin-left var(--transition-normal);
+}
+
+.dashboard-topbar {
+  height: var(--nav-height);
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topbar-menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--navy-900);
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: var(--radius-sm);
+}
+
+.topbar-menu-toggle:hover {
+  background-color: var(--slate-100);
+}
+
+.topbar-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: var(--white, #ffffff);
+  border: 1px solid var(--slate-200, #e2e8f0);
+  color: var(--navy-900, #0f172a);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm, 6px);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  user-select: none;
+}
+
+.topbar-back-btn:hover {
+  background-color: var(--slate-100, #f1f5f9);
+  border-color: var(--slate-300, #cbd5e1);
+  color: var(--primary, #2563eb);
+  transform: translateX(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.topbar-back-btn:active {
+  transform: translateX(-3px);
+}
+
+.topbar-back-text {
+  letter-spacing: 0.02em;
+}
+
+.topbar-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar-platform-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-sky);
+}
+
+.topbar-page-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--navy-900);
+  line-height: 1.2;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.topbar-score-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(2, 132, 199, 0.08));
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-full);
+}
+
+.score-icon {
+  color: var(--primary-light);
+}
+
+.score-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.score-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--slate-500);
+}
+
+.score-value {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--navy-900);
+}
+
+.topbar-user-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  background: var(--white);
+  transition: all var(--transition-fast);
+}
+
+.topbar-user-pill:hover {
+  border-color: #cbd5e1;
+  box-shadow: var(--shadow-sm);
+}
+
+.user-pill-avatar {
+  width: 32px;
+  height: 32px;
+  background: var(--navy-900);
+  color: var(--white);
+  border-radius: var(--radius-full);
+  font-size: 0.775rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-pill-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.user-pill-name {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+.user-pill-role {
+  font-size: 0.675rem;
+  color: var(--slate-500);
+}
+
+.dashboard-inner-content {
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .dashboard-main-area {
+    margin-left: 0;
+  }
+
+  .topbar-menu-toggle {
+    display: block;
+  }
+
+  .dashboard-topbar {
+    padding: 0 1rem;
+  }
+
+  .user-pill-info {
+    display: none;
+  }
+
+  .dashboard-inner-content {
+    padding: 1.25rem 1rem;
+  }
+}

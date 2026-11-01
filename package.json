@@ -1,0 +1,35 @@
+{
+  "name": "skillbridge",
+  "version": "1.0.0",
+  "description": "SkillBridge – Youth Employability Platform (College Full Stack Development Project)",
+  "scripts": {
+    "start": "npm --prefix server start",
+    "dev": "npm --prefix client run dev",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "client:build": "npm --prefix client run build",
+    "server": "npm --prefix server run dev",
+    "server:start": "npm --prefix server start",
+    "seed": "npm --prefix server run seed",
+    "test": "npm --prefix server test",
+    "test:auth": "npm --prefix server run test:auth",
+    "test:profile": "npm --prefix server run test:profile",
+    "test:jobs": "npm --prefix server run test:jobs",
+    "test:matching": "npm --prefix server run test:matching",
+    "test:assessments": "npm --prefix server run test:assessments",
+    "test:resumes": "npm --prefix server run test:resumes",
+    "test:admin": "npm --prefix server run test:admin",
+    "test:mentors": "npm --prefix server run test:mentors",
+    "test:all": "npm test && npm run test:auth && npm run test:profile && npm run test:jobs && npm run test:matching && npm run test:assessments && npm run test:resumes && npm run test:admin && npm run test:mentors"
+  },
+  "keywords": [
+    "skillbridge",
+    "mern",
+    "employability",
+    "react",
+    "nodejs",
+    "vite"
+  ],
+  "author": "SkillBridge Team",
+  "license": "ISC"
+}

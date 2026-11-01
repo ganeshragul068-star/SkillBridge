@@ -1,0 +1,205 @@
+[
+  {
+    "studentId": "6589b6c2aad89337eac747cd",
+    "title": "Full Stack MERN Developer Resume",
+    "targetRole": "Full Stack Developer",
+    "template": "ats",
+    "isDefault": true,
+    "personalInfo": {
+      "fullName": "Alex Johnson",
+      "email": "alex.johnson@college.edu",
+      "phone": "+91 98765 43210",
+      "location": "Bengaluru, India",
+      "linkedinUrl": "https://linkedin.com/in/alexjohnson",
+      "githubUrl": "https://github.com/alexjohnson",
+      "portfolioUrl": "https://alexjohnson.dev",
+      "summary": "Driven Final Year B.Tech Computer Science student with comprehensive hands-on proficiency in React.js, Node.js, Express.js, MongoDB, and RESTful microservices architecture."
+    },
+    "education": [
+      {
+        "institution": "National Institute of Technology",
+        "degree": "Bachelor of Technology",
+        "fieldOfStudy": "Computer Science and Engineering",
+        "startYear": 2022,
+        "endYear": 2026,
+        "grade": "8.8 / 10 CGPA",
+        "location": "Bengaluru, India"
+      }
+    ],
+    "experience": [
+      {
+        "company": "CodeCraft Innovations",
+        "role": "Frontend Development Intern",
+        "location": "Bengaluru (Hybrid)",
+        "startDate": "May 2025",
+        "endDate": "July 2025",
+        "current": false,
+        "description": "Engineered responsive customer onboarding workflows using React and Tailwind CSS.",
+        "bulletPoints": [
+          "Architected 12+ reusable React components with comprehensive accessibility (a11y) standards.",
+          "Optimized client-side bundle size by 28% using dynamic code splitting and React.lazy."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "CampHub — College Event Management Platform",
+        "description": "End-to-end event ticketing web app serving 1,500+ active student registrations.",
+        "technologies": [
+          "React.js",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "Tailwind CSS"
+        ],
+        "liveUrl": "https://camphub-demo.vercel.app",
+        "githubUrl": "https://github.com/alexjohnson/camphub",
+        "startDate": "Jan 2025",
+        "endDate": "Apr 2025",
+        "bulletPoints": [
+          "Built JWT-based authentication with role-based access control (Student vs Club Organizer).",
+          "Implemented real-time seat availability notifications using WebSockets and Redis pub/sub.",
+          "Generated QR check-in tickets that reduced queue wait times during campus symposiums by 45%."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript (ES6+)",
+        "category": "Programming Languages",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "React.js",
+        "category": "Frontend Development",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Node.js",
+        "category": "Backend Development",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "Express.js",
+        "category": "Backend Development",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "MongoDB",
+        "category": "Database",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "HTML5 & CSS3",
+        "category": "Frontend Development",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Git & GitHub",
+        "category": "DevOps & Tools",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Meta Front-End Developer Professional Certificate",
+        "issuingOrganization": "Coursera / Meta",
+        "issueDate": "2025-06-15",
+        "credentialId": "META-FED-2025-9981",
+        "credentialUrl": "https://coursera.org/verify/META-FED-2025-9981"
+      }
+    ],
+    "customSections": [],
+    "_id": "71b694f5202674ff7dd9e837",
+    "createdAt": "2026-11-01T13:19:46.495Z",
+    "updatedAt": "2026-11-01T13:19:46.495Z"
+  },
+  {
+    "studentId": "6589b6c2aad89337eac747cd",
+    "title": "Senior MERN Developer Resume",
+    "targetRole": "Full Stack Tech Lead",
+    "template": "modern",
+    "personalInfo": {
+      "fullName": "Alex Johnson",
+      "email": "alex.johnson@college.edu",
+      "phone": "+91 98765 43210",
+      "location": "Bangalore, India",
+      "linkedinUrl": "",
+      "githubUrl": "",
+      "portfolioUrl": "",
+      "summary": "Enthusiastic full-stack web developer passionate about building scalable JavaScript and MERN systems."
+    },
+    "education": [
+      {
+        "institution": "National Institute of Technology",
+        "degree": "B.Tech",
+        "fieldOfStudy": "Computer Science",
+        "startYear": 2022,
+        "endYear": 2026,
+        "grade": "8.7 / 10 CGPA CGPA"
+      }
+    ],
+    "experience": [],
+    "projects": [
+      {
+        "title": "CampHub - College Event Management Platform",
+        "description": "Web portal enabling student clubs to organize hackathons and ticketing with QR verification.",
+        "technologies": [],
+        "liveUrl": "https://camphub.example.com",
+        "githubUrl": "https://github.com/alexjohnson/camphub",
+        "startDate": "",
+        "endDate": "",
+        "bulletPoints": []
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript (ES6+)",
+        "category": "Programming Language",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "React.js",
+        "category": "Frontend",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Node.js",
+        "category": "Backend",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "Express.js",
+        "category": "Backend",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "HTML5 & CSS3",
+        "category": "Frontend",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Git & GitHub",
+        "category": "DevOps",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "MongoDB",
+        "category": "Database",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "AWS Certified Cloud Practitioner",
+        "issuingOrganization": "Amazon Web Services",
+        "issueDate": "2025-08-10"
+      }
+    ],
+    "customSections": [],
+    "isDefault": false,
+    "_id": "4f9f5ccdcd9e2c23ad1b6950",
+    "createdAt": "2026-11-01T13:21:25.250Z",
+    "updatedAt": "2026-11-01T13:21:25.340Z"
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "name": "Sarah Chen",
+    "title": "Staff Full-Stack Software Engineer",
+    "profileImage": "",
+    "email": "sarah.chen@techbridge-demo.io",
+    "company": "Veloce Cloud Systems",
+    "industry": "Software & Internet Technologies",
+    "yearsOfExperience": 8,
+    "technicalSkills": [
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redux",
+      "GraphQL",
+      "Tailwind CSS",
+      "REST APIs",
+      "Git"
+    ],
+    "areasOfExpertise": [
+      "Full Stack Architecture",
+      "Scalable REST & GraphQL APIs",
+      "Microfrontends",
+      "State Management",
+      "Performance Optimization"
+    ],
+    "careerDomains": [
+      "Full Stack Development",
+      "Frontend Development",
+      "Web Development",
+      "Software Engineering"
+    ],
+    "bio": "Staff Engineer with 8+ years scaling production React and Node.js microservices. Passionate about mentoring junior and aspiring engineers on clean code and system design.",
+    "availability": "5 hours/week",
+    "preferredMode": "online",
+    "isActive": true,
+    "_id": "4b4e51e1c30a7b4c8b35e12c",
+    "createdAt": "2026-11-01T13:19:46.515Z",
+    "updatedAt": "2026-11-01T13:19:46.515Z"
+  },
+  {
+    "name": "Marcus Vance",
+    "title": "Principal DevOps & Cloud Infrastructure Architect",
+    "profileImage": "",
+    "email": "marcus.vance@cloudpeak-demo.net",
+    "company": "CloudPeak Networks",
+    "industry": "Cloud Infrastructure & DevOps",
+    "yearsOfExperience": 11,
+    "technicalSkills": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Linux",
+      "CI/CD",
+      "Terraform",
+      "GitHub Actions",
+      "Python",
+      "Bash",
+      "Prometheus"
+    ],
+    "areasOfExpertise": [
+      "Container Orchestration",
+      "Multi-Cloud Strategy",
+      "Zero-Downtime Deployments",
+      "Infrastructure as Code",
+      "Site Reliability Engineering"
+    ],
+    "careerDomains": [
+      "Cloud Computing and DevOps",
+      "DevOps Engineering",
+      "Cloud Architecture",
+      "Platform Engineering"
+    ],
+    "bio": "AWS Certified Solutions Architect & Kubernetes specialist helping startups migrate to robust microservice and automated GitOps pipelines.",
+    "availability": "Weekends & Evenings",
+    "preferredMode": "hybrid",
+    "isActive": true,
+    "_id": "d5bf4f40a073a8b7751a8744",
+    "createdAt": "2026-11-01T13:19:46.519Z",
+    "updatedAt": "2026-11-01T13:19:46.519Z"
+  },
+  {
+    "name": "Dr. Elena Rostova",
+    "title": "Lead Applied AI & Deep Learning Scientist",
+    "profileImage": "",
+    "email": "elena.rostova@neurolabs-demo.ai",
+    "company": "NeuroLabs Research",
+    "industry": "Artificial Intelligence",
+    "yearsOfExperience": 7,
+    "technicalSkills": [
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-Learn",
+      "Computer Vision",
+      "NLP",
+      "Large Language Models",
+      "FastAPI",
+      "Pandas",
+      "NumPy"
+    ],
+    "areasOfExpertise": [
+      "Deep Learning Models",
+      "Transformer Architectures",
+      "MLOps Pipelines",
+      "Model Fine-Tuning",
+      "Research to Production"
+    ],
+    "careerDomains": [
+      "Artificial Intelligence and Machine Learning",
+      "AI Research",
+      "Machine Learning Engineering",
+      "Data Science"
+    ],
+    "bio": "AI researcher turned applied ML Lead. Focused on helping students bridge academic neural network concepts to real-world inference and production deployments.",
+    "availability": "3 hours/week",
+    "preferredMode": "online",
+    "isActive": true,
+    "_id": "042c9ab4ff6aa3b0fc0113ff",
+    "createdAt": "2026-11-01T13:19:46.523Z",
+    "updatedAt": "2026-11-01T13:19:46.523Z"
+  },
+  {
+    "name": "David K. O'Connor",
+    "title": "Director of Application Security & Penetration Testing",
+    "profileImage": "",
+    "email": "david.oconnor@securenet-demo.org",
+    "company": "CyberGuard Defense",
+    "industry": "Information Security & Cybersecurity",
+    "yearsOfExperience": 12,
+    "technicalSkills": [
+      "Network Security",
+      "Application Security",
+      "Penetration Testing",
+      "Ethical Hacking",
+      "OWASP Top 10",
+      "Cryptography",
+      "Linux",
+      "Python",
+      "Wireshark",
+      "SOC Analysis"
+    ],
+    "areasOfExpertise": [
+      "Vulnerability Assessment",
+      "DevSecOps Integration",
+      "Security Architecture",
+      "Incident Response",
+      "Threat Modeling"
+    ],
+    "careerDomains": [
+      "Cybersecurity",
+      "Information Security",
+      "Application Security",
+      "Security Operations"
+    ],
+    "bio": "Certified Ethical Hacker (CEH) and CISSP with over a decade of defense experience guiding students into defensive security, AppSec, and red-team roles.",
+    "availability": "Flexible weekday slots",
+    "preferredMode": "online",
+    "isActive": true,
+    "_id": "ac66a911b14c6eb5a313d2f9",
+    "createdAt": "2026-11-01T13:19:46.527Z",
+    "updatedAt": "2026-11-01T13:19:46.527Z"
+  },
+  {
+    "name": "Priya Nair",
+    "title": "Senior Data Scientist & Analytics Lead",
+    "profileImage": "",
+    "email": "priya.nair@insightflow-demo.io",
+    "company": "InsightFlow Analytics",
+    "industry": "Data Science & Analytics",
+    "yearsOfExperience": 6,
+    "technicalSkills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "NumPy",
+      "Tableau",
+      "PowerBI",
+      "Statistical Modeling",
+      "A/B Testing",
+      "Data Visualization",
+      "PostgreSQL"
+    ],
+    "areasOfExpertise": [
+      "Predictive Analytics",
+      "Exploratory Data Analysis",
+      "Customer Segmentation",
+      "Dashboard Engineering",
+      "Statistical Hypothesis Testing"
+    ],
+    "careerDomains": [
+      "Data Science",
+      "Data Analytics",
+      "Business Intelligence",
+      "Quantitative Analytics"
+    ],
+    "bio": "Data scientist translating messy enterprise data into actionable executive insights. Mentoring candidates on storytelling with data and technical interview prep.",
+    "availability": "4 hours/week",
+    "preferredMode": "online",
+    "isActive": true,
+    "_id": "0566d01a366071babc7a5a0a",
+    "createdAt": "2026-11-01T13:19:46.530Z",
+    "updatedAt": "2026-11-01T13:19:46.530Z"
+  },
+  {
+    "name": "Vikram Malhotra",
+    "title": "Autonomous Systems & Robotics Software Specialist",
+    "profileImage": "",
+    "email": "vikram.malhotra@robocore-demo.com",
+    "company": "AeroBotix Dynamics",
+    "industry": "Robotics & Hardware Engineering",
+    "yearsOfExperience": 9,
+    "technicalSkills": [
+      "C++",
+      "Python",
+      "ROS / ROS2",
+      "Linux",
+      "Gazebo Simulation",
+      "Computer Vision",
+      "OpenCV",
+      "SLAM",
+      "Path Planning",
+      "Embedded C"
+    ],
+    "areasOfExpertise": [
+      "Robot Operating System (ROS2)",
+      "Sensor Fusion & LiDAR",
+      "Kinematics & Dynamics",
+      "Embedded Linux",
+      "Autonomous Navigation"
+    ],
+    "careerDomains": [
+      "Robotics and ROS",
+      "Autonomous Systems",
+      "Embedded Robotics",
+      "Mechatronics"
+    ],
+    "bio": "Robotics engineer building autonomous mobile robots (AMRs). Passionate about demystifying ROS2 nodes, TF2 transforms, and SLAM navigation for students.",
+    "availability": "Weekends only",
+    "preferredMode": "hybrid",
+    "isActive": true,
+    "_id": "212d457d78097f6d79147ef2",
+    "createdAt": "2026-11-01T13:19:46.539Z",
+    "updatedAt": "2026-11-01T13:19:46.539Z"
+  }
+]

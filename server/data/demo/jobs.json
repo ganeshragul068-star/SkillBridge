@@ -1,0 +1,309 @@
+[
+  {
+    "title": "Frontend React Developer Intern",
+    "company": "TechNova Labs",
+    "description": "Design and build performant, responsive client dashboards and reusable React component libraries for our enterprise SaaS suite.",
+    "jobType": "Internship",
+    "location": "Bangalore, India",
+    "workMode": "Hybrid",
+    "requiredSkills": [
+      "React.js",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Git"
+    ],
+    "qualifications": [
+      "B.Tech / BCA in Computer Science",
+      "Strong JavaScript fundamentals"
+    ],
+    "experience": "Fresher / Student",
+    "salary": "₹25,000 / month",
+    "applicationDeadline": "2026-12-01T13:19:46.459Z",
+    "openings": 3,
+    "status": "Active",
+    "createdBy": "96cc7d0039f3cb7e4976c243",
+    "_id": "95eccc556d25c1ecf368a599",
+    "createdAt": "2026-11-01T13:19:46.460Z",
+    "updatedAt": "2026-11-01T13:19:46.460Z"
+  },
+  {
+    "title": "Junior MERN Stack Developer",
+    "company": "NextGen Solutions",
+    "description": "Join our product squad developing end-to-end B2B microservices. Great role for 2025/2026 graduates with hands-on full-stack projects.",
+    "jobType": "Full-time",
+    "location": "Hyderabad, India",
+    "workMode": "On-site",
+    "requiredSkills": [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "REST APIs"
+    ],
+    "qualifications": [
+      "Bachelor degree in Computer Science or IT",
+      "Completed MERN projects"
+    ],
+    "experience": "0 - 1 Years",
+    "salary": "₹6.5 - 8.0 LPA",
+    "applicationDeadline": "2026-11-26T13:19:46.459Z",
+    "openings": 2,
+    "status": "Active",
+    "createdBy": "96cc7d0039f3cb7e4976c243",
+    "_id": "2f4349b7a33d83a4832c4a73",
+    "createdAt": "2026-11-01T13:19:46.460Z",
+    "updatedAt": "2026-11-01T13:19:46.460Z"
+  },
+  {
+    "title": "Backend Node.js & API Intern",
+    "company": "Apex Fintech Solutions",
+    "description": "Collaborate with senior backend engineers on payment ledger integrations, secure authentication, and webhook reliability.",
+    "jobType": "Internship",
+    "location": "Remote",
+    "workMode": "Remote",
+    "requiredSkills": [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "REST APIs"
+    ],
+    "qualifications": [
+      "3rd or 4th year undergraduate student",
+      "Familiarity with Postman"
+    ],
+    "experience": "Student / Fresher",
+    "salary": "₹30,000 / month",
+    "applicationDeadline": "2026-11-21T13:19:46.459Z",
+    "openings": 4,
+    "status": "Active",
+    "createdBy": "96cc7d0039f3cb7e4976c243",
+    "_id": "f528f338ad2fd5851370a85b",
+    "createdAt": "2026-11-01T13:19:46.460Z",
+    "updatedAt": "2026-11-01T13:19:46.460Z"
+  },
+  {
+    "title": "Java Spring Boot Developer Trainee",
+    "company": "Cognitive Enterprise Systems",
+    "description": "Work on distributed core banking microservices using Spring Boot, Hibernate, and Oracle/PostgreSQL databases.",
+    "jobType": "Full-time",
+    "location": "Pune, India",
+    "workMode": "Hybrid",
+    "requiredSkills": [
+      "Java",
+      "Spring Boot",
+      "Hibernate",
+      "SQL",
+      "Data Structures"
+    ],
+    "qualifications": [
+      "B.E. / B.Tech / MCA 2025 or 2026 Batch",
+      "Good OOP knowledge"
+    ],
+    "experience": "Fresher",
+    "salary": "₹5.5 - 7.0 LPA",
+    "applicationDeadline": "2026-12-11T13:19:46.459Z",
+    "openings": 5,
+    "status": "Active",
+    "createdBy": "96cc7d0039f3cb7e4976c243",
+    "_id": "5bdbe0cd26162db7fe59ce18",
+    "createdAt": "2026-11-01T13:19:46.461Z",
+    "updatedAt": "2026-11-01T13:19:46.461Z"
+  },
+  {
+    "title": "Python Data Analyst Intern",
+    "company": "InsightWave Analytics",
+    "description": "Analyze telemetry and user cohort datasets. Write automated ETL transformation scripts and build PowerBI executive dashboards.",
+    "jobType": "Internship",
+    "location": "Gurgaon, India",
+    "workMode": "Hybrid",
+    "requiredSkills": [
+      "Python",
+      "Pandas",
+      "SQL",
+      "Data Visualization",
+      "Excel"
+    ],
+    "qualifications": [
+      "Undergraduate in CS, Statistics, or Math",
+      "Strong analytical mindset"
+    ],
+    "experience": "Fresher / Student",
+    "salary": "₹22,000 / month",
+    "applicationDeadline": "2026-11-16T13:19:46.459Z",
+    "openings": 2,
+    "status": "Active",
+    "createdBy": "96cc7d0039f3cb7e4976c243",
+    "_id": "c0b9c6e9987a7d079f4c6cce",
+    "createdAt": "2026-11-01T13:19:46.461Z",
+    "updatedAt": "2026-11-01T13:19:46.461Z"
+  },
+  {
+    "title": "Cloud DevOps & Infrastructure Intern",
+    "company": "CloudPeak Networks",
+    "description": "Learn modern continuous deployment, Docker containerization, AWS EC2/S3 management, and GitHub Actions automation.",
+    "jobType": "Internship",
+    "location": "Remote",
+    "workMode": "Remote",
+    "requiredSkills": [
+      "Docker",
+      "Linux",
+      "Git",
+      "AWS Basics",
+      "Bash"
+    ],
+    "qualifications": [
+      "Hands-on Linux CLI experience",
+      "Basic understanding of networking"
+    ],
+    "experience": "Student",
+    "salary": "₹28,000 / month",
+    "applicationDeadline": "2026-12-06T13:19:46.459Z",
+    "openings": 3,
+    "status": "Active",
+    "createdBy": "96cc7d0039f3cb7e4976c243",
+    "_id": "50ac95fbeab571171ffebfc3",
+    "createdAt": "2026-11-01T13:19:46.461Z",
+    "updatedAt": "2026-11-01T13:19:46.461Z"
+  },
+  {
+    "title": "Junior Database Administrator (SQL & NoSQL)",
+    "company": "DataCore Corp",
+    "description": "Assist in schema migrations, index optimization, automated backup monitoring, and query performance tuning across MySQL and MongoDB.",
+    "jobType": "Full-time",
+    "location": "Chennai, India",
+    "workMode": "On-site",
+    "requiredSkills": [
+      "SQL",
+      "MongoDB",
+      "Database Indexing",
+      "Database Normalization",
+      "Linux"
+    ],
+    "qualifications": [
+      "B.Tech Computer Science / Information Tech",
+      "Strong DB theory"
+    ],
+    "experience": "0 - 1 Years",
+    "salary": "₹4.8 - 6.2 LPA",
+    "applicationDeadline": "2026-11-29T13:19:46.460Z",
+    "openings": 2,
+    "status": "Active",
+    "createdBy": "96cc7d0039f3cb7e4976c243",
+    "_id": "f114c1b577c2bb436717905c",
+    "createdAt": "2026-11-01T13:19:46.461Z",
+    "updatedAt": "2026-11-01T13:19:46.461Z"
+  },
+  {
+    "title": "Mobile App Developer Intern (Flutter)",
+    "company": "AppVerse Studio",
+    "description": "Develop slick, cross-platform Android and iOS applications using Flutter and Dart, connecting with Firebase and REST backends.",
+    "jobType": "Internship",
+    "location": "Remote",
+    "workMode": "Remote",
+    "requiredSkills": [
+      "Flutter",
+      "Dart",
+      "Mobile UI",
+      "REST APIs",
+      "Firebase"
+    ],
+    "qualifications": [
+      "Built at least one mobile application project",
+      "Passionate about mobile UX"
+    ],
+    "experience": "Fresher / Student",
+    "salary": "₹20,000 / month",
+    "applicationDeadline": "2026-11-19T13:19:46.460Z",
+    "openings": 2,
+    "status": "Active",
+    "createdBy": "96cc7d0039f3cb7e4976c243",
+    "_id": "cdc93ab1a3b752409bb88c19",
+    "createdAt": "2026-11-01T13:19:46.461Z",
+    "updatedAt": "2026-11-01T13:19:46.461Z"
+  },
+  {
+    "title": "QA & Test Automation Trainee",
+    "company": "QualityFirst Labs",
+    "description": "Write automated API and end-to-end web test suites using Jest, Cypress, and Selenium. Gain real-world CI/CD pipeline experience.",
+    "jobType": "Full-time",
+    "location": "Noida, India",
+    "workMode": "Hybrid",
+    "requiredSkills": [
+      "JavaScript",
+      "Jest",
+      "Automation Testing",
+      "Selenium",
+      "Git"
+    ],
+    "qualifications": [
+      "Engineering or Computer Applications graduate",
+      "Meticulous attention to detail"
+    ],
+    "experience": "Fresher",
+    "salary": "₹4.5 - 5.5 LPA",
+    "applicationDeadline": "2026-11-23T13:19:46.460Z",
+    "openings": 4,
+    "status": "Active",
+    "createdBy": "96cc7d0039f3cb7e4976c243",
+    "_id": "83855758f347b613153b1cfb",
+    "createdAt": "2026-11-01T13:19:46.461Z",
+    "updatedAt": "2026-11-01T13:19:46.461Z"
+  },
+  {
+    "title": "Full Stack Web Developer (Python & Django)",
+    "company": "ByteScale Innovations",
+    "description": "Build robust web applications leveraging Django REST Framework, PostgreSQL, and modern React frontends.",
+    "jobType": "Full-time",
+    "location": "Mumbai, India",
+    "workMode": "Hybrid",
+    "requiredSkills": [
+      "Python",
+      "Django",
+      "React.js",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "qualifications": [
+      "Solid Python coding skills",
+      "Knowledge of MVC / MTV design patterns"
+    ],
+    "experience": "0 - 1 Years",
+    "salary": "₹6.0 - 7.5 LPA",
+    "applicationDeadline": "2026-12-01T13:19:46.460Z",
+    "openings": 2,
+    "status": "Active",
+    "createdBy": "96cc7d0039f3cb7e4976c243",
+    "_id": "5045ba2d94d5bad13bb913be",
+    "createdAt": "2026-11-01T13:19:46.461Z",
+    "updatedAt": "2026-11-01T13:19:46.461Z"
+  },
+  {
+    "title": "UI/UX Design & Frontend Engineering Intern",
+    "company": "PixelCraft Digital",
+    "description": "Bridge the bridge between high-fidelity Figma component prototypes and clean, modular HTML5/CSS3/React implementations.",
+    "jobType": "Internship",
+    "location": "Remote",
+    "workMode": "Remote",
+    "requiredSkills": [
+      "Figma",
+      "React.js",
+      "CSS3",
+      "Responsive Design",
+      "Accessibility"
+    ],
+    "qualifications": [
+      "Design portfolio or GitHub demo links required"
+    ],
+    "experience": "Student",
+    "salary": "₹18,000 / month",
+    "applicationDeadline": "2026-11-15T13:19:46.460Z",
+    "openings": 2,
+    "status": "Active",
+    "createdBy": "96cc7d0039f3cb7e4976c243",
+    "_id": "5097e1248ba192c3fbe513ba",
+    "createdAt": "2026-11-01T13:19:46.461Z",
+    "updatedAt": "2026-11-01T13:19:46.461Z"
+  }
+]
