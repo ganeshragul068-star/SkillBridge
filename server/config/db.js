@@ -5,7 +5,15 @@ const { isDemoMode } = require('./dataMode');
 mongoose.set('bufferCommands', false);
 
 /**
- * Connect to MongoDB Atlas (Active ONLY when DATA_MODE=mongodb)
+ * Safely masks username and password credentials from MongoDB connection strings
+ */
+function sanitizeMongoUri(rawUri) {
+  if (!rawUri || typeof rawUri !== 'string') return '';
+  return rawUri.replace(/(mongodb(?:\+srv)?:\/\/)([^:@]+):([^@]+)@/i, '$1***:***@');
+}
+
+/**
+ * Connect to BYTEXL MongoDB (Active ONLY when DATA_MODE=mongodb)
  */
 const connectDB = async () => {
   // In Demo Mode, MongoDB is completely decoupled
@@ -15,17 +23,35 @@ const connectDB = async () => {
     return null;
   }
 
-  // MongoDB Mode
-  const uri = process.env.MONGODB_URI || process.env.MONGO_URI;
+  // Detect connection variable provided by BYTEXL MERN workspace or server/.env
+  const candidateVars = [
+    'MONGODB_URI',
+    'MONGO_URI',
+    'MONGO_DB_URI',
+    'MONGODB_URL',
+    'DATABASE_URL'
+  ];
+
+  let uri = null;
+  let detectedVar = null;
+
+  for (const varName of candidateVars) {
+    if (process.env[varName] && process.env[varName].trim()) {
+      uri = process.env[varName].trim();
+      detectedVar = varName;
+      break;
+    }
+  }
 
   if (!uri) {
-    console.error('❌ [MongoDB Error]: Neither MONGODB_URI nor MONGO_URI is defined in environment.');
-    console.error('   Please configure your BYTEXL MongoDB URI in server/.env or workspace environment.');
+    console.error('❌ [MongoDB Error]: No MongoDB connection string found.');
+    console.error(`   Checked environment variables: ${candidateVars.join(', ')}.`);
+    console.error('   Please verify the BYTEXL-provided MongoDB connection variable or define MONGODB_URI in server/.env.');
     return null;
   }
 
-  const sanitized = uri.replace(/\/\/[^:]+:[^@]+@/, '//***:***@');
-  console.log(`🔌 [MongoDB Connecting]: Target ${sanitized}`);
+  const sanitized = sanitizeMongoUri(uri);
+  console.log(`🔌 [MongoDB Connecting]: Detected '${detectedVar}', Target: ${sanitized}`);
 
   try {
     const conn = await mongoose.connect(uri, {

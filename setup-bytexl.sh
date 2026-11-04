@@ -30,11 +30,12 @@ if [ ! -f server/.env ]; then
   echo "⚙️ Creating server/.env from template..."
   cp server/.env.example server/.env
 
-  # If MONGODB_URI environment variable is provided by BYTEXL, configure it
-  if [ -n "$MONGODB_URI" ]; then
-    echo "🔌 Detected BYTEXL MONGODB_URI environment variable."
+  # If MongoDB URI environment variable is provided by BYTEXL, configure it
+  BYTEXL_MONGO="${MONGODB_URI:-${MONGO_URI:-$MONGO_DB_URI}}"
+  if [ -n "$BYTEXL_MONGO" ]; then
+    echo "🔌 Detected BYTEXL MongoDB environment variable."
     sed -i "s|DATA_MODE=demo|DATA_MODE=mongodb|g" server/.env
-    sed -i "s|MONGO_URI=.*|MONGODB_URI=$MONGODB_URI|g" server/.env
+    sed -i "s|MONGO_URI=.*|MONGODB_URI=$BYTEXL_MONGO|g" server/.env
   fi
 
   if [ -n "$GEMINI_API_KEY" ]; then

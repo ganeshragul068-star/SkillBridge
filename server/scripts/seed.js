@@ -27,7 +27,7 @@ const seedDatabase = async () => {
     if (!isDemoMode()) {
       const conn = await connectDB();
       if (!conn) {
-        console.error('❌ Could not establish database connection. Please check MONGO_URI in .env');
+        console.error('❌ Could not establish database connection. Please check MONGODB_URI, MONGO_URI, or MONGO_DB_URI in the environment.');
         process.exit(1);
       }
     } else {
