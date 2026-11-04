@@ -4,11 +4,11 @@ const statusHistorySchema = new mongoose.Schema(
   {
     previousStatus: {
       type: String,
-      required: true
+      default: 'None'
     },
     newStatus: {
       type: String,
-      required: true
+      default: 'Applied'
     },
     changedBy: {
       type: mongoose.Schema.Types.ObjectId,

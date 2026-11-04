@@ -449,9 +449,9 @@ const seedDatabase = async () => {
         status: 'Shortlisted',
         coverLetter: 'I have hands-on React and full-stack JavaScript experience demonstrated via CampHub.',
         statusHistory: [
-          { status: 'Applied', changedAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000) },
-          { status: 'Under Review', changedAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000) },
-          { status: 'Shortlisted', changedAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000), remarks: 'Strong React portfolio projects.' }
+          { previousStatus: 'None', newStatus: 'Applied', changedAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000) },
+          { previousStatus: 'Applied', newStatus: 'Under Review', changedAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000) },
+          { previousStatus: 'Under Review', newStatus: 'Shortlisted', changedAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000), notes: 'Strong React portfolio projects.' }
         ]
       },
       {
@@ -460,8 +460,8 @@ const seedDatabase = async () => {
         status: 'Under Review',
         coverLetter: 'Skilled in Python, SQL and predictive modeling.',
         statusHistory: [
-          { status: 'Applied', changedAt: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000) },
-          { status: 'Under Review', changedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000) }
+          { previousStatus: 'None', newStatus: 'Applied', changedAt: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000) },
+          { previousStatus: 'Applied', newStatus: 'Under Review', changedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000) }
         ]
       },
       {
@@ -470,10 +470,10 @@ const seedDatabase = async () => {
         status: 'Selected',
         coverLetter: 'Certified in Docker and experienced in building automated CI/CD pipelines.',
         statusHistory: [
-          { status: 'Applied', changedAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000) },
-          { status: 'Under Review', changedAt: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000) },
-          { status: 'Shortlisted', changedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000) },
-          { status: 'Selected', changedAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000), remarks: 'Exceptional system architecture and Docker knowledge.' }
+          { previousStatus: 'None', newStatus: 'Applied', changedAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000) },
+          { previousStatus: 'Applied', newStatus: 'Under Review', changedAt: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000) },
+          { previousStatus: 'Under Review', newStatus: 'Shortlisted', changedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000) },
+          { previousStatus: 'Shortlisted', newStatus: 'Selected', changedAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000), notes: 'Exceptional system architecture and Docker knowledge.' }
         ]
       },
       {
@@ -482,7 +482,7 @@ const seedDatabase = async () => {
         status: 'Applied',
         coverLetter: 'Enthusiastic about building accessible, performant React web clients.',
         statusHistory: [
-          { status: 'Applied', changedAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000) }
+          { previousStatus: 'None', newStatus: 'Applied', changedAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000) }
         ]
       },
       {
@@ -491,8 +491,8 @@ const seedDatabase = async () => {
         status: 'Rejected',
         coverLetter: 'Passionate about Java Spring Boot microservices.',
         statusHistory: [
-          { status: 'Applied', changedAt: new Date(Date.now() - 6 * 24 * 60 * 60 * 1000) },
-          { status: 'Rejected', changedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000), remarks: 'Role requires 1+ year enterprise experience.' }
+          { previousStatus: 'None', newStatus: 'Applied', changedAt: new Date(Date.now() - 6 * 24 * 60 * 60 * 1000) },
+          { previousStatus: 'Applied', newStatus: 'Rejected', changedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000), notes: 'Role requires 1+ year enterprise experience.' }
         ]
       }
     ]);

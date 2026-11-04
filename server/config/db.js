@@ -54,10 +54,13 @@ const connectDB = async () => {
   console.log(`🔌 [MongoDB Connecting]: Detected '${detectedVar}', Target: ${sanitized}`);
 
   try {
-    const conn = await mongoose.connect(uri, {
-      dbName: process.env.DB_NAME || 'skillbridge',
+    const connectOptions = {
       serverSelectionTimeoutMS: 5000
-    });
+    };
+    if (process.env.DB_NAME) {
+      connectOptions.dbName = process.env.DB_NAME;
+    }
+    const conn = await mongoose.connect(uri, connectOptions);
 
     console.log(`✅ [MongoDB Connected]: Host=${conn.connection.host}`);
     console.log(`   Database Name: ${conn.connection.name}`);
