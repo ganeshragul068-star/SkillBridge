@@ -7,6 +7,14 @@ echo "========================================================"
 echo " 🚀 Setting up SkillBridge in BYTEXL MERN Workspace"
 echo "========================================================"
 
+# Step 0: Free up ports 5000 and 5173 if previously occupied
+echo "🧹 Releasing ports 5000 and 5173..."
+fuser -k 5000/tcp 2>/dev/null || true
+fuser -k 5173/tcp 2>/dev/null || true
+pkill -f "server.js" 2>/dev/null || true
+pkill -f "vite" 2>/dev/null || true
+sleep 1
+
 # Step 1: Install root, server, and client dependencies
 echo "📦 Installing root dependencies..."
 npm install
@@ -44,10 +52,15 @@ fi
 echo "🌱 Seeding evaluation accounts and job applications..."
 npm run seed
 
+# Step 5: Build client bundle (enables single-server low-memory hosting on Port 5000)
+echo "🏗️ Building client production bundle..."
+npm --prefix client run build
+
 echo "========================================================"
 echo "✅ Setup Complete!"
-echo "🚀 Starting SkillBridge (Backend on 5000, Frontend on 5173)..."
+echo "🚀 Starting SkillBridge on Port 5000 (Express + React Frontend)..."
+echo "   In BYTEXL, open Port 5000 in Web Preview!"
 echo "========================================================"
 
-# Step 5: Launch concurrent servers
-npm run dev
+# Step 6: Launch unified server
+npm start

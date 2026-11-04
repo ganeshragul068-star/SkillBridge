@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "concurrently -k -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
     "dev:all": "concurrently -k -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
-    "start": "concurrently -k -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm --prefix server start\" \"npm --prefix client run preview\"",
+    "start": "node server/server.js",
+    "start:both": "concurrently -k -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm --prefix server start\" \"npm --prefix client run preview\"",
     "client": "npm --prefix client run dev",
     "client:dev": "npm --prefix client run dev",
     "build": "npm --prefix client run build",
