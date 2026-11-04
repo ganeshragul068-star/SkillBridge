@@ -1,10 +1,10 @@
 [
   {
-    "studentId": "6589b6c2aad89337eac747cd",
-    "resumeId": "71b694f5202674ff7dd9e837",
+    "studentId": "d72d64c2513ecad7498b3d95",
+    "resumeId": "f05b3aee3a83bf35d022cbb0",
     "resumeTitle": "Full Stack MERN Developer Resume",
     "targetRole": "Frontend React Developer Intern",
-    "jobId": "95eccc556d25c1ecf368a599",
+    "jobId": "e76e965457bf53b6fbbeb0f7",
     "jobTitle": "Frontend React Developer Intern",
     "company": "TechNova Labs",
     "source": "saved-resume",
@@ -29,41 +29,95 @@
     "relevantProjects": [
       "CampHub — College Event Management Platform (React.js, Node.js, Express.js, MongoDB, Tailwind CSS)"
     ],
-    "aiConfigured": false,
-    "_id": "c9851f97b1d0c934f3103b46",
-    "createdAt": "2026-11-01T13:19:46.499Z",
-    "updatedAt": "2026-11-01T13:19:46.499Z"
+    "aiConfigured": true,
+    "_id": "53e664fa1d8a73ff1eec277e",
+    "createdAt": "2026-11-04T15:17:38.669Z",
+    "updatedAt": "2026-11-04T15:17:38.669Z"
   },
   {
-    "studentId": "6589b6c2aad89337eac747cd",
-    "resumeId": "4f9f5ccdcd9e2c23ad1b6950",
-    "resumeTitle": "Senior MERN Developer Resume",
-    "targetRole": "Full Stack Tech Lead",
-    "jobId": "95eccc556d25c1ecf368a599",
+    "studentId": "d72d64c2513ecad7498b3d95",
+    "resumeId": null,
+    "resumeTitle": "Submitted Resume",
+    "targetRole": "Target Role",
+    "jobId": "e76e965457bf53b6fbbeb0f7",
     "jobTitle": "Frontend React Developer Intern",
     "company": "TechNova Labs",
-    "source": "saved-resume",
-    "matchPercentage": 50,
+    "source": "raw-text",
+    "matchPercentage": 40,
     "matchingSkills": [
-      "React.js",
-      "Node.js"
+      "JavaScript",
+      "React"
     ],
     "missingSkills": [
-      "Docker",
-      "AWS"
+      "Node.js",
+      "MongoDB",
+      "Git"
     ],
     "strengths": [
-      "Strong coverage in core technologies: React.js, Node.js."
+      "Strong coverage in core technologies: JavaScript, React."
     ],
     "improvements": [
-      "Add or upskill in missing requirements: Docker, AWS.",
-      "Highlight any academic or extracurricular coursework involving Docker."
+      "Add or upskill in missing requirements: Node.js, MongoDB, Git.",
+      "Highlight any academic or extracurricular coursework involving Node.js.",
+      "Expand technical skills section with developer tools (e.g. Git, Docker, Postman)."
     ],
     "relevantProjects": [],
     "aiAnalysis": null,
-    "aiConfigured": false,
-    "_id": "114335a32b881609e5591c45",
-    "createdAt": "2026-11-01T13:21:25.578Z",
-    "updatedAt": "2026-11-01T13:21:25.578Z"
+    "aiConfigured": true,
+    "_id": "e473342419d138bc1d75585b",
+    "createdAt": "2026-11-04T15:19:16.215Z",
+    "updatedAt": "2026-11-04T15:19:16.215Z"
+  },
+  {
+    "studentId": "d72d64c2513ecad7498b3d95",
+    "resumeTitle": "Alex MERN Resume",
+    "targetRole": "Full Stack Developer",
+    "matchPercentage": 85,
+    "_id": "ab0e8ab3c74fc6de59633a23",
+    "createdAt": "2026-11-04T15:19:16.220Z",
+    "updatedAt": "2026-11-04T15:19:16.220Z"
+  },
+  {
+    "studentId": "d72d64c2513ecad7498b3d95",
+    "resumeId": null,
+    "resumeTitle": "Submitted Resume",
+    "targetRole": "Target Role",
+    "jobId": "e76e965457bf53b6fbbeb0f7",
+    "jobTitle": "Frontend React Developer Intern",
+    "company": "TechNova Labs",
+    "source": "raw-text",
+    "matchPercentage": 40,
+    "matchingSkills": [
+      "JavaScript",
+      "React"
+    ],
+    "missingSkills": [
+      "Node.js",
+      "MongoDB",
+      "Git"
+    ],
+    "strengths": [
+      "Strong coverage in core technologies: JavaScript, React."
+    ],
+    "improvements": [
+      "Add or upskill in missing requirements: Node.js, MongoDB, Git.",
+      "Highlight any academic or extracurricular coursework involving Node.js.",
+      "Expand technical skills section with developer tools (e.g. Git, Docker, Postman)."
+    ],
+    "relevantProjects": [],
+    "aiAnalysis": null,
+    "aiConfigured": true,
+    "_id": "415eee55bc7d5acc9ccd1b95",
+    "createdAt": "2026-11-04T15:35:08.280Z",
+    "updatedAt": "2026-11-04T15:35:08.280Z"
+  },
+  {
+    "studentId": "d72d64c2513ecad7498b3d95",
+    "resumeTitle": "Alex MERN Resume",
+    "targetRole": "Full Stack Developer",
+    "matchPercentage": 85,
+    "_id": "e385517d695bfb5d26b3d860",
+    "createdAt": "2026-11-04T15:35:08.284Z",
+    "updatedAt": "2026-11-04T15:35:08.284Z"
   }
 ]

@@ -20,17 +20,22 @@ const startServer = async () => {
     app.listen(PORT);
   } else {
     try {
-      await connectDB();
+      const conn = await connectDB();
+      if (!conn) {
+        console.error('❌ Fatal: MongoDB connection failed in MONGODB mode. Halting server startup to prevent data loss or silent demo fallback.');
+        process.exit(1);
+      }
       const server = app.listen(PORT, () => {
         console.log('=======================================================');
         console.log(` 🚀 SkillBridge Backend API Server running on port ${PORT}`);
-        console.log(`    Mode        : MONGODB MODE`);
+        console.log(`    Mode        : MONGODB MODE (Active Persistent Storage)`);
         console.log(`    Environment : ${process.env.NODE_ENV || 'development'}`);
         console.log(`    Health Check: http://localhost:${PORT}/api/health`);
         console.log('=======================================================');
       });
     } catch (err) {
       console.error(`Database initialization failure: ${err.message}`);
+      process.exit(1);
     }
   }
 

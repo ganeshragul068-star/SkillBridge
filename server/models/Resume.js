@@ -66,7 +66,7 @@ const resumeSchema = new mongoose.Schema(
     },
     template: {
       type: String,
-      enum: ['classic', 'modern', 'ats'],
+      enum: ['classic', 'modern', 'ats', 'creative'],
       default: 'ats'
     },
     personalInfo: {

@@ -10,7 +10,9 @@ import {
   LayoutDashboard,
   LogOut,
   ShieldCheck,
-  ArrowLeft
+  ArrowLeft,
+  FileText,
+  FileCheck
 } from 'lucide-react';
 import Button from './Button';
 import { useAuth } from '../../context/AuthContext';
@@ -80,6 +82,12 @@ const Navbar = () => {
             <>
               <Link to="/dashboard" className={`nav-link ${isActive('/dashboard') ? 'active' : ''}`}>
                 Student Dashboard
+              </Link>
+              <Link to="/resume-builder" className={`nav-link ${isActive('/resume-builder') ? 'active' : ''}`}>
+                Resume Builder
+              </Link>
+              <Link to="/resume-analysis" className={`nav-link ${isActive('/resume-analysis') ? 'active' : ''}`}>
+                Resume Analyzer
               </Link>
               <Link to="/profile" className={`nav-link ${isActive('/profile') ? 'active' : ''}`}>
                 Profile
@@ -172,6 +180,14 @@ const Navbar = () => {
                 <Link to="/dashboard" className={`mobile-nav-link ${isActive('/dashboard') ? 'active' : ''}`} onClick={closeMenu}>
                   <LayoutDashboard size={18} />
                   Student Dashboard
+                </Link>
+                <Link to="/resume-builder" className={`mobile-nav-link ${isActive('/resume-builder') ? 'active' : ''}`} onClick={closeMenu}>
+                  <FileText size={18} />
+                  AI Resume Builder
+                </Link>
+                <Link to="/resume-analysis" className={`mobile-nav-link ${isActive('/resume-analysis') ? 'active' : ''}`} onClick={closeMenu}>
+                  <FileCheck size={18} />
+                  AI Resume Analyzer
                 </Link>
                 <Link to="/profile" className={`mobile-nav-link ${isActive('/profile') ? 'active' : ''}`} onClick={closeMenu}>
                   <User size={18} />

@@ -8,28 +8,35 @@ const pdfParse = require('pdf-parse');
 const mammoth = require('mammoth');
 
 /**
- * Supported Resume Templates Catalog
+ * Supported Resume Templates Catalog (Exactly Four ATS-Friendly Templates)
  */
 const TEMPLATES = [
   {
-    id: 'ats',
-    name: 'ATS-Friendly Standard',
-    badge: 'Harvard & Tech Standard',
-    description: 'Clean, single-column monochrome format optimized for Applicant Tracking Systems and recruiter scanning.',
-    recommended: true
+    id: 'classic',
+    name: 'Classic Professional',
+    badge: 'Traditional & Executive',
+    description: 'Traditional professional appearance with black-and-white color scheme, clear section headings, and classic typography.',
+    recommended: false
   },
   {
     id: 'modern',
     name: 'Modern Technical',
-    badge: 'Design & Engineering',
-    description: 'Contemporary tech layout with subtle indigo accents, banner header, and organized skill chips.',
+    badge: 'Software & Engineering',
+    description: 'Contemporary tech layout with subtle accent colors, clean typography, and clearly organized technical skills and projects.',
     recommended: false
   },
   {
-    id: 'classic',
-    name: 'Classic Professional',
-    badge: 'Executive & Academic',
-    description: 'Traditional serif typography with formal divider rules, centered headers, and executive styling.',
+    id: 'ats',
+    name: 'ATS Friendly',
+    badge: 'Single-Column Standard',
+    description: 'Strict single-column layout, standard section headings, and simple fonts without graphics or complex tables for maximum ATS parseability.',
+    recommended: true
+  },
+  {
+    id: 'creative',
+    name: 'Creative Minimal',
+    badge: 'Minimalist & Clean',
+    description: 'Elegant and minimal appearance with balanced spacing, clean typography, and ATS-compatible structure without decorative elements.',
     recommended: false
   }
 ];

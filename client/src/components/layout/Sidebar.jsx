@@ -8,6 +8,7 @@ import {
   BookmarkCheck,
   Compass,
   FileText,
+  FileCheck,
   LogOut,
   X,
   Sparkles,
@@ -33,6 +34,8 @@ const Sidebar = ({ isOpen, onClose }) => {
     { name: 'Skill Gap Matrix', path: '/skill-gap', icon: Target },
     { name: 'Learning Roadmap', path: '/roadmap', icon: Compass },
     { name: 'Curated Courses', path: '/courses', icon: BookOpen },
+    { name: 'AI Resume Builder', path: '/resume-builder', icon: FileText },
+    { name: 'AI Resume Analyzer', path: '/resume-analysis', icon: FileCheck },
     { name: 'Mentor Matching', path: '/mentors', icon: Users },
     { name: 'Browse All Jobs', path: '/jobs', icon: Briefcase },
     { name: 'Student Profile & Skills', path: '/profile', icon: UserCheck }
@@ -42,7 +45,9 @@ const Sidebar = ({ isOpen, onClose }) => {
     { name: 'Admin Dashboard', path: '/admin', icon: LayoutDashboard },
     { name: 'Manage Job Listings', path: '/admin/jobs', icon: Briefcase },
     { name: 'Review Applications', path: '/admin/applications', icon: FileText },
-    { name: 'Assessment Console', path: '/admin/assessments', icon: Award }
+    { name: 'Assessment Console', path: '/admin/assessments', icon: Award },
+    { name: 'AI Resume Builder', path: '/resume-builder', icon: FileText },
+    { name: 'AI Resume Analyzer', path: '/resume-analysis', icon: FileCheck }
   ];
 
   const navItems = user?.role === 'admin' ? adminNavItems : studentNavItems;

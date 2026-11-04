@@ -1,200 +1,137 @@
 [
   {
-    "_id": "65e080000000000000000001",
-    "studentId": "65e010000000000000000002",
-    "jobId": "65e030000000000000000001",
-    "resumeUrl": "https://skillbridge.edu/resumes/alex-johnson.pdf",
-    "coverNote": "Excited about contributing to TechNova Labs front-end architecture with my React and JavaScript background.",
+    "studentId": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@college.edu",
+      "_id": "d72d64c2513ecad7498b3d95"
+    },
+    "jobId": {
+      "title": "Frontend React Developer Intern",
+      "company": "TechNova Labs",
+      "_id": "e76e965457bf53b6fbbeb0f7"
+    },
     "status": "Shortlisted",
-    "notes": "Profile shortlisted for interview round 1.",
-    "createdAt": "2026-10-31T08:14:34.129Z",
-    "updatedAt": "2026-11-01T13:21:30.925Z",
+    "coverLetter": "I have hands-on React and full-stack JavaScript experience demonstrated via CampHub.",
     "statusHistory": [
       {
-        "previousStatus": "Under Review",
+        "status": "Applied",
+        "changedAt": "2026-10-30T15:17:38.626Z"
+      },
+      {
+        "status": "Under Review",
+        "changedAt": "2026-11-01T15:17:38.626Z"
+      },
+      {
+        "status": "Shortlisted",
+        "changedAt": "2026-11-03T15:17:38.626Z",
+        "remarks": "Strong React portfolio projects."
+      },
+      {
+        "previousStatus": "Shortlisted",
         "newStatus": "Shortlisted",
-        "changedBy": "6b0a27e9eae8947ab3f7fa2a",
-        "changedAt": "2026-11-01T10:56:41.925Z",
+        "changedBy": "a80aa0adace8c21bdaeeda08",
+        "changedAt": "2026-11-04T15:18:10.442Z",
         "notes": "Top candidate matching React & Node criteria"
       },
       {
         "previousStatus": "Shortlisted",
         "newStatus": "Shortlisted",
-        "changedBy": "6b0a27e9eae8947ab3f7fa2a",
-        "changedAt": "2026-11-01T10:58:56.891Z",
+        "changedBy": "a80aa0adace8c21bdaeeda08",
+        "changedAt": "2026-11-04T15:19:22.236Z",
         "notes": "Top candidate matching React & Node criteria"
       },
       {
         "previousStatus": "Shortlisted",
         "newStatus": "Shortlisted",
-        "changedBy": "6b0a27e9eae8947ab3f7fa2a",
-        "changedAt": "2026-11-01T11:32:27.795Z",
-        "notes": "Top candidate matching React & Node criteria"
-      },
-      {
-        "previousStatus": "Shortlisted",
-        "newStatus": "Shortlisted",
-        "changedBy": "6b0a27e9eae8947ab3f7fa2a",
-        "changedAt": "2026-11-01T11:53:50.092Z",
-        "notes": "Top candidate matching React & Node criteria"
-      },
-      {
-        "previousStatus": "Shortlisted",
-        "newStatus": "Shortlisted",
-        "changedBy": "6b0a27e9eae8947ab3f7fa2a",
-        "changedAt": "2026-11-01T12:13:07.465Z",
-        "notes": "Top candidate matching React & Node criteria"
-      },
-      {
-        "previousStatus": "Shortlisted",
-        "newStatus": "Shortlisted",
-        "changedBy": "6b0a27e9eae8947ab3f7fa2a",
-        "changedAt": "2026-11-01T13:16:50.524Z",
-        "notes": "Top candidate matching React & Node criteria"
-      },
-      {
-        "previousStatus": "Shortlisted",
-        "newStatus": "Shortlisted",
-        "changedBy": "96cc7d0039f3cb7e4976c243",
-        "changedAt": "2026-11-01T13:21:30.925Z",
+        "changedBy": "a80aa0adace8c21bdaeeda08",
+        "changedAt": "2026-11-04T15:35:14.245Z",
         "notes": "Top candidate matching React & Node criteria"
       }
-    ]
+    ],
+    "_id": "e831f4b8fef79335a162b5d0",
+    "createdAt": "2026-11-04T15:17:38.626Z",
+    "updatedAt": "2026-11-04T15:35:14.245Z"
   },
   {
-    "studentId": "43ce5a81801b8c95a43b9ce0",
-    "jobId": "0b48190ba59e2073a449d788",
-    "studentName": "Alex Johnson",
-    "studentEmail": "alex.johnson@college.edu",
-    "phone": "+91 98765 43210",
-    "college": "National Institute of Technology",
-    "resumeUrl": "",
-    "coverLetter": "",
+    "studentId": "b0e864f91ae69b6158240a7c",
+    "jobId": "2158c4e064dd41654f9cd67f",
+    "status": "Under Review",
+    "coverLetter": "Skilled in Python, SQL and predictive modeling.",
+    "statusHistory": [
+      {
+        "status": "Applied",
+        "changedAt": "2026-10-31T15:17:38.626Z"
+      },
+      {
+        "status": "Under Review",
+        "changedAt": "2026-11-02T15:17:38.626Z"
+      }
+    ],
+    "_id": "eb26346b2e4ea7cc98645a75",
+    "createdAt": "2026-11-04T15:17:38.630Z",
+    "updatedAt": "2026-11-04T15:17:38.630Z"
+  },
+  {
+    "studentId": "c2582fb846b9f2eb413ed80e",
+    "jobId": "d469a56ea6136846263f05c5",
+    "status": "Selected",
+    "coverLetter": "Certified in Docker and experienced in building automated CI/CD pipelines.",
+    "statusHistory": [
+      {
+        "status": "Applied",
+        "changedAt": "2026-10-28T15:17:38.626Z"
+      },
+      {
+        "status": "Under Review",
+        "changedAt": "2026-10-31T15:17:38.626Z"
+      },
+      {
+        "status": "Shortlisted",
+        "changedAt": "2026-11-02T15:17:38.626Z"
+      },
+      {
+        "status": "Selected",
+        "changedAt": "2026-11-03T15:17:38.626Z",
+        "remarks": "Exceptional system architecture and Docker knowledge."
+      }
+    ],
+    "_id": "fc5581857194efedd0359a97",
+    "createdAt": "2026-11-04T15:17:38.633Z",
+    "updatedAt": "2026-11-04T15:17:38.633Z"
+  },
+  {
+    "studentId": "190effcf5e18d42341ea9c95",
+    "jobId": "b681c6e213aafa776d731f40",
     "status": "Applied",
+    "coverLetter": "Enthusiastic about building accessible, performant React web clients.",
     "statusHistory": [
       {
-        "previousStatus": "None",
-        "newStatus": "Applied",
-        "changedBy": "43ce5a81801b8c95a43b9ce0",
-        "changedAt": "2026-11-01T09:38:21.244Z",
-        "notes": "Application submitted by student"
+        "status": "Applied",
+        "changedAt": "2026-11-03T15:17:38.626Z"
       }
     ],
-    "_id": "578e2b9728e975d74d2d66fd",
-    "createdAt": "2026-11-01T09:38:21.244Z",
-    "updatedAt": "2026-11-01T09:38:21.244Z"
+    "_id": "a461dd089c51cab019919510",
+    "createdAt": "2026-11-04T15:17:38.636Z",
+    "updatedAt": "2026-11-04T15:17:38.636Z"
   },
   {
-    "studentId": "43ce5a81801b8c95a43b9ce0",
-    "jobId": "41cf51ef94f1ae27ea22a589",
-    "studentName": "Alex Johnson",
-    "studentEmail": "alex.johnson@college.edu",
-    "phone": "+91 98765 43210",
-    "college": "National Institute of Technology",
-    "resumeUrl": "",
-    "coverLetter": "",
-    "status": "Applied",
+    "studentId": "7c45a65f0434881ef49f1754",
+    "jobId": "a1bcb36d282f6d41afea9949",
+    "status": "Rejected",
+    "coverLetter": "Passionate about Java Spring Boot microservices.",
     "statusHistory": [
       {
-        "previousStatus": "None",
-        "newStatus": "Applied",
-        "changedBy": "43ce5a81801b8c95a43b9ce0",
-        "changedAt": "2026-11-01T09:42:13.681Z",
-        "notes": "Application submitted by student"
-      }
-    ],
-    "_id": "a8919ec20ca5b18afad9cd12",
-    "createdAt": "2026-11-01T09:42:13.681Z",
-    "updatedAt": "2026-11-01T09:42:13.681Z"
-  },
-  {
-    "studentId": "5e508e2b43892c4c6a9e12fe",
-    "jobId": "5bf073c953104625a9f7ccf5",
-    "studentName": "shaheer",
-    "studentEmail": "ragulprasath.24it@kct.ac.in",
-    "phone": "",
-    "college": "kct",
-    "resumeUrl": "",
-    "coverLetter": "",
-    "status": "Withdrawn",
-    "statusHistory": [
-      {
-        "previousStatus": "None",
-        "newStatus": "Applied",
-        "changedBy": "5e508e2b43892c4c6a9e12fe",
-        "changedAt": "2026-11-01T11:05:30.596Z",
-        "notes": "Application submitted by student"
+        "status": "Applied",
+        "changedAt": "2026-10-29T15:17:38.626Z"
       },
       {
-        "previousStatus": "Applied",
-        "newStatus": "Withdrawn",
-        "changedBy": "5e508e2b43892c4c6a9e12fe",
-        "changedAt": "2026-11-01T12:04:35.475Z",
-        "notes": "Withdrawn by student"
+        "status": "Rejected",
+        "changedAt": "2026-11-02T15:17:38.626Z",
+        "remarks": "Role requires 1+ year enterprise experience."
       }
     ],
-    "_id": "4f959709a0e412eaa27e3013",
-    "createdAt": "2026-11-01T11:05:30.597Z",
-    "updatedAt": "2026-11-01T12:04:35.475Z"
-  },
-  {
-    "studentId": "5e508e2b43892c4c6a9e12fe",
-    "jobId": "ac7ebc5dd1e9656f5a34db67",
-    "studentName": "shaheer",
-    "studentEmail": "ragulprasath.24it@kct.ac.in",
-    "phone": "",
-    "college": "kct",
-    "resumeUrl": "",
-    "coverLetter": "",
-    "status": "Withdrawn",
-    "statusHistory": [
-      {
-        "previousStatus": "None",
-        "newStatus": "Applied",
-        "changedBy": "5e508e2b43892c4c6a9e12fe",
-        "changedAt": "2026-11-01T11:05:42.086Z",
-        "notes": "Application submitted by student"
-      },
-      {
-        "previousStatus": "Applied",
-        "newStatus": "Withdrawn",
-        "changedBy": "5e508e2b43892c4c6a9e12fe",
-        "changedAt": "2026-11-01T12:04:49.623Z",
-        "notes": "Withdrawn by student"
-      }
-    ],
-    "_id": "c0e0243542a20f4d42f45e40",
-    "createdAt": "2026-11-01T11:05:42.087Z",
-    "updatedAt": "2026-11-01T12:04:49.623Z"
-  },
-  {
-    "studentId": "5e508e2b43892c4c6a9e12fe",
-    "jobId": "a356d51e78590efed9b5638a",
-    "studentName": "shaheer",
-    "studentEmail": "ragulprasath.24it@kct.ac.in",
-    "phone": "",
-    "college": "kct",
-    "resumeUrl": "",
-    "coverLetter": "",
-    "status": "Withdrawn",
-    "statusHistory": [
-      {
-        "previousStatus": "None",
-        "newStatus": "Applied",
-        "changedBy": "5e508e2b43892c4c6a9e12fe",
-        "changedAt": "2026-11-01T11:17:28.693Z",
-        "notes": "Application submitted by student"
-      },
-      {
-        "previousStatus": "Applied",
-        "newStatus": "Withdrawn",
-        "changedBy": "5e508e2b43892c4c6a9e12fe",
-        "changedAt": "2026-11-01T12:04:40.977Z",
-        "notes": "Withdrawn by student"
-      }
-    ],
-    "_id": "8de09442d1c060430e84c86c",
-    "createdAt": "2026-11-01T11:17:28.694Z",
-    "updatedAt": "2026-11-01T12:04:40.977Z"
+    "_id": "86160e05a27167f4ad299c00",
+    "createdAt": "2026-11-04T15:17:38.639Z",
+    "updatedAt": "2026-11-04T15:17:38.639Z"
   }
 ]

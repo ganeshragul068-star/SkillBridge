@@ -1,49 +1,49 @@
 [
   {
-    "studentId": "6589b6c2aad89337eac747cd",
+    "studentId": "d72d64c2513ecad7498b3d95",
     "skill": "JavaScript",
     "currentProficiency": "Advanced",
     "targetProficiency": "Expert",
     "progressPercentage": 85,
     "startedCourses": [
-      "50831cc1229d8179df8e9bf5"
+      "adf4b57279284299fc49f752"
     ],
     "completedCourses": [
-      "50831cc1229d8179df8e9bf5"
+      "adf4b57279284299fc49f752"
     ],
     "notes": "Passed JavaScript diagnostic with expert standing.",
-    "_id": "0c25860e15480fdc56b17420",
-    "createdAt": "2026-11-01T13:19:46.483Z",
-    "updatedAt": "2026-11-01T13:19:46.483Z"
+    "_id": "77169d38b4c19d045c095cd3",
+    "createdAt": "2026-11-04T15:17:38.655Z",
+    "updatedAt": "2026-11-04T15:17:38.655Z"
   },
   {
-    "studentId": "6589b6c2aad89337eac747cd",
+    "studentId": "d72d64c2513ecad7498b3d95",
     "skill": "React.js",
     "currentProficiency": "Advanced",
     "targetProficiency": "Expert",
     "progressPercentage": 75,
     "startedCourses": [
-      "d41f7537bd8076c3454ef32b"
+      "22fc1f0e5c31e6d9c0feefd5"
     ],
     "completedCourses": [],
     "notes": "Currently working through custom hooks and performance optimization.",
-    "_id": "554b4b98e25eca40bcd77aa3",
-    "createdAt": "2026-11-01T13:19:46.487Z",
-    "updatedAt": "2026-11-01T13:19:46.487Z"
+    "_id": "1ebd7615967fed3c1c89facb",
+    "createdAt": "2026-11-04T15:17:38.658Z",
+    "updatedAt": "2026-11-04T15:17:38.658Z"
   },
   {
-    "studentId": "6589b6c2aad89337eac747cd",
+    "studentId": "d72d64c2513ecad7498b3d95",
     "skill": "Node.js",
     "currentProficiency": "Intermediate",
     "targetProficiency": "Advanced",
     "progressPercentage": 60,
     "startedCourses": [
-      "9ec3d51c703a89d6965284de"
+      "2b1364b1eecd4c76076d0cf0"
     ],
     "completedCourses": [],
     "notes": "API architecture and secure JWT middleware practice.",
-    "_id": "ff32b45c6ff5026f3483b84b",
-    "createdAt": "2026-11-01T13:19:46.491Z",
-    "updatedAt": "2026-11-01T13:19:46.491Z"
+    "_id": "51b5a8ee191f1a9ac6019b89",
+    "createdAt": "2026-11-04T15:17:38.661Z",
+    "updatedAt": "2026-11-04T15:17:38.661Z"
   }
 ]

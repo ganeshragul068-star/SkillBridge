@@ -12,9 +12,9 @@
     "difficulty": "Intermediate",
     "duration": "4 Hours",
     "courseUrl": "https://learn.mongodb.com",
-    "_id": "022fe70502c2b37fe4ba21b4",
-    "createdAt": "2026-11-01T13:19:46.465Z",
-    "updatedAt": "2026-11-01T13:19:46.465Z",
+    "_id": "7345178c1b574b4dfb0be9a6",
+    "createdAt": "2026-11-04T15:17:38.642Z",
+    "updatedAt": "2026-11-04T15:17:38.642Z",
     "isActive": true
   },
   {
@@ -30,9 +30,9 @@
     "difficulty": "Beginner",
     "duration": "6 Hours",
     "courseUrl": "https://skillbridge.edu/courses/docker",
-    "_id": "e1c356ba6e278e6552e88927",
-    "createdAt": "2026-11-01T13:19:46.465Z",
-    "updatedAt": "2026-11-01T13:19:46.465Z",
+    "_id": "45c17bfeb1590bd6bd28cb14",
+    "createdAt": "2026-11-04T15:17:38.642Z",
+    "updatedAt": "2026-11-04T15:17:38.642Z",
     "isActive": true
   },
   {
@@ -47,9 +47,9 @@
     "difficulty": "Intermediate",
     "duration": "8 Hours",
     "courseUrl": "https://javascript.info",
-    "_id": "50831cc1229d8179df8e9bf5",
-    "createdAt": "2026-11-01T13:19:46.465Z",
-    "updatedAt": "2026-11-01T13:19:46.465Z",
+    "_id": "adf4b57279284299fc49f752",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   },
   {
@@ -64,9 +64,9 @@
     "difficulty": "Advanced",
     "duration": "10 Hours",
     "courseUrl": "https://react.dev",
-    "_id": "d41f7537bd8076c3454ef32b",
-    "createdAt": "2026-11-01T13:19:46.465Z",
-    "updatedAt": "2026-11-01T13:19:46.465Z",
+    "_id": "22fc1f0e5c31e6d9c0feefd5",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   },
   {
@@ -82,9 +82,9 @@
     "difficulty": "Intermediate",
     "duration": "5 Hours",
     "courseUrl": "https://skillbridge.edu/courses/node-security",
-    "_id": "9ec3d51c703a89d6965284de",
-    "createdAt": "2026-11-01T13:19:46.466Z",
-    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "_id": "2b1364b1eecd4c76076d0cf0",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   },
   {
@@ -100,9 +100,9 @@
     "difficulty": "Intermediate",
     "duration": "12 Hours",
     "courseUrl": "https://spring.io/guides",
-    "_id": "6957ca34ef8af676322282f0",
-    "createdAt": "2026-11-01T13:19:46.466Z",
-    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "_id": "6da2319a8cc24947d2993464",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   },
   {
@@ -118,9 +118,9 @@
     "difficulty": "Beginner",
     "duration": "7 Hours",
     "courseUrl": "https://skillbridge.edu/courses/python-data",
-    "_id": "69e2a30cfeadbe70fd841b79",
-    "createdAt": "2026-11-01T13:19:46.466Z",
-    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "_id": "ab92b6ccbd9339c6773bf8ba",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   },
   {
@@ -135,9 +135,9 @@
     "difficulty": "Intermediate",
     "duration": "6 Hours",
     "courseUrl": "https://skillbridge.edu/courses/sql-optimization",
-    "_id": "befb2f2ae129881e62431952",
-    "createdAt": "2026-11-01T13:19:46.466Z",
-    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "_id": "46d3ab31d2d6a50a9a960326",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   },
   {
@@ -153,9 +153,9 @@
     "difficulty": "Intermediate",
     "duration": "4 Hours",
     "courseUrl": "https://skillbridge.edu/courses/testing",
-    "_id": "6978a36afd9eebbd9e5753ad",
-    "createdAt": "2026-11-01T13:19:46.466Z",
-    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "_id": "2eafe96394195694a37cfbd9",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   },
   {
@@ -170,9 +170,9 @@
     "difficulty": "Beginner",
     "duration": "3 Hours",
     "courseUrl": "https://git-scm.com/book/en/v2",
-    "_id": "3196fafc73e5953e1c54ec0c",
-    "createdAt": "2026-11-01T13:19:46.466Z",
-    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "_id": "3472fd2235366aeb783fac2a",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   },
   {
@@ -189,9 +189,9 @@
     "difficulty": "Intermediate",
     "duration": "6 Hours",
     "courseUrl": "https://redux-toolkit.js.org/tutorials/quick-start",
-    "_id": "443aa3b33e4f3adde8d1c8fd",
-    "createdAt": "2026-11-01T13:19:46.466Z",
-    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "_id": "5cab52ad5d7b74eb400e1d12",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   },
   {
@@ -208,9 +208,9 @@
     "difficulty": "Beginner",
     "duration": "5 Hours",
     "courseUrl": "https://tailwindcss.com/docs/utility-first",
-    "_id": "217efbcda1d718318f0bd115",
-    "createdAt": "2026-11-01T13:19:46.466Z",
-    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "_id": "65cb40242b5d9322e454a61c",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   },
   {
@@ -226,9 +226,9 @@
     "difficulty": "Intermediate",
     "duration": "7 Hours",
     "courseUrl": "https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html",
-    "_id": "25b6890dca23f964b1b16fb4",
-    "createdAt": "2026-11-01T13:19:46.466Z",
-    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "_id": "7026780bc5f2690671cb73dc",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   },
   {
@@ -245,9 +245,9 @@
     "difficulty": "Intermediate",
     "duration": "12 Hours",
     "courseUrl": "https://react.dev/learn/typescript",
-    "_id": "2075e47f06f7a6289f2dec40",
-    "createdAt": "2026-11-01T13:19:46.466Z",
-    "updatedAt": "2026-11-01T13:19:46.466Z",
+    "_id": "160fa8810c3d2b6f20b8db44",
+    "createdAt": "2026-11-04T15:17:38.643Z",
+    "updatedAt": "2026-11-04T15:17:38.643Z",
     "isActive": true
   }
 ]

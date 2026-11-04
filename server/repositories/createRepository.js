@@ -111,6 +111,14 @@ function createRepository(collectionName, MongooseModel) {
     }
 
     static async create(data) {
+      if (Array.isArray(data)) {
+        const createdItems = [];
+        for (const item of data) {
+          createdItems.push(await this.create(item));
+        }
+        return createdItems;
+      }
+
       if (!isDemoMode() && MongooseModel) {
         return await MongooseModel.create(data);
       }

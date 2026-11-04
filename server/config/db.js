@@ -16,22 +16,25 @@ const connectDB = async () => {
   }
 
   // MongoDB Mode
-  const uri = process.env.MONGO_URI || process.env.MONGODB_URI;
+  const uri = process.env.MONGODB_URI || process.env.MONGO_URI;
 
   if (!uri) {
-    console.warn('⚠️  [MongoDB Warning]: Neither MONGO_URI nor MONGODB_URI is defined in environment.');
-    console.warn('   Please configure your MongoDB Atlas URI in server/.env');
+    console.error('❌ [MongoDB Error]: Neither MONGODB_URI nor MONGO_URI is defined in environment.');
+    console.error('   Please configure your BYTEXL MongoDB URI in server/.env or workspace environment.');
     return null;
   }
 
+  const sanitized = uri.replace(/\/\/[^:]+:[^@]+@/, '//***:***@');
+  console.log(`🔌 [MongoDB Connecting]: Target ${sanitized}`);
+
   try {
     const conn = await mongoose.connect(uri, {
-      dbName: 'skillbridge',
+      dbName: process.env.DB_NAME || 'skillbridge',
       serverSelectionTimeoutMS: 5000
     });
 
-    console.log(`✅ [MongoDB Atlas Connected]: ${conn.connection.host}`);
-    console.log(`   Database: ${conn.connection.name}`);
+    console.log(`✅ [MongoDB Connected]: Host=${conn.connection.host}`);
+    console.log(`   Database Name: ${conn.connection.name}`);
     return conn;
   } catch (error) {
     console.error(`❌ [MongoDB Connection Error]: ${error.message}`);

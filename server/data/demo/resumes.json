@@ -1,6 +1,6 @@
 [
   {
-    "studentId": "6589b6c2aad89337eac747cd",
+    "studentId": "d72d64c2513ecad7498b3d95",
     "title": "Full Stack MERN Developer Resume",
     "targetRole": "Full Stack Developer",
     "template": "ats",
@@ -110,14 +110,14 @@
       }
     ],
     "customSections": [],
-    "_id": "71b694f5202674ff7dd9e837",
-    "createdAt": "2026-11-01T13:19:46.495Z",
-    "updatedAt": "2026-11-01T13:19:46.495Z"
+    "_id": "f05b3aee3a83bf35d022cbb0",
+    "createdAt": "2026-11-04T15:17:38.665Z",
+    "updatedAt": "2026-11-04T15:17:38.665Z"
   },
   {
-    "studentId": "6589b6c2aad89337eac747cd",
-    "title": "Senior MERN Developer Resume",
-    "targetRole": "Full Stack Tech Lead",
+    "studentId": "d72d64c2513ecad7498b3d95",
+    "title": "Senior MERN Stack Resume",
+    "targetRole": "Lead Frontend Engineer",
     "template": "modern",
     "personalInfo": {
       "fullName": "Alex Johnson",
@@ -191,15 +191,103 @@
     ],
     "certifications": [
       {
-        "name": "AWS Certified Cloud Practitioner",
-        "issuingOrganization": "Amazon Web Services",
-        "issueDate": "2025-08-10"
+        "name": "Meta Certified Frontend Developer",
+        "issuingOrganization": "Coursera / Meta",
+        "issueDate": "2025"
       }
     ],
     "customSections": [],
     "isDefault": false,
-    "_id": "4f9f5ccdcd9e2c23ad1b6950",
-    "createdAt": "2026-11-01T13:21:25.250Z",
-    "updatedAt": "2026-11-01T13:21:25.340Z"
+    "_id": "9f9337353108caabb639a4b2",
+    "createdAt": "2026-11-04T15:19:15.861Z",
+    "updatedAt": "2026-11-04T15:19:15.868Z"
+  },
+  {
+    "studentId": "d72d64c2513ecad7498b3d95",
+    "title": "Senior MERN Stack Resume",
+    "targetRole": "Lead Frontend Engineer",
+    "template": "modern",
+    "personalInfo": {
+      "fullName": "Alex Johnson",
+      "email": "alex.johnson@college.edu",
+      "phone": "+91 98765 43210",
+      "location": "Bangalore, India",
+      "linkedinUrl": "",
+      "githubUrl": "",
+      "portfolioUrl": "",
+      "summary": "Enthusiastic full-stack web developer passionate about building scalable JavaScript and MERN systems."
+    },
+    "education": [
+      {
+        "institution": "National Institute of Technology",
+        "degree": "B.Tech",
+        "fieldOfStudy": "Computer Science",
+        "startYear": 2022,
+        "endYear": 2026,
+        "grade": "8.7 / 10 CGPA CGPA"
+      }
+    ],
+    "experience": [],
+    "projects": [
+      {
+        "title": "CampHub - College Event Management Platform",
+        "description": "Web portal enabling student clubs to organize hackathons and ticketing with QR verification.",
+        "technologies": [],
+        "liveUrl": "https://camphub.example.com",
+        "githubUrl": "https://github.com/alexjohnson/camphub",
+        "startDate": "",
+        "endDate": "",
+        "bulletPoints": []
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript (ES6+)",
+        "category": "Programming Language",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "React.js",
+        "category": "Frontend",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Node.js",
+        "category": "Backend",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "Express.js",
+        "category": "Backend",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "HTML5 & CSS3",
+        "category": "Frontend",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Git & GitHub",
+        "category": "DevOps",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "MongoDB",
+        "category": "Database",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Meta Certified Frontend Developer",
+        "issuingOrganization": "Coursera / Meta",
+        "issueDate": "2025"
+      }
+    ],
+    "customSections": [],
+    "isDefault": false,
+    "_id": "5d7f4a33cbde76216140366c",
+    "createdAt": "2026-11-04T15:35:07.900Z",
+    "updatedAt": "2026-11-04T15:35:07.909Z"
   }
 ]

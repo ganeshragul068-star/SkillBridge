@@ -8,6 +8,8 @@ const connectDB = require('../config/db');
 const User = require('../models/User');
 const Profile = require('../models/Profile');
 const Job = require('../models/Job');
+const Application = require('../models/Application');
+const SavedJob = require('../models/SavedJob');
 const Course = require('../models/Course');
 const Assessment = require('../models/Assessment');
 const AssessmentResult = require('../models/AssessmentResult');
@@ -36,6 +38,8 @@ const seedDatabase = async () => {
     await User.deleteMany({});
     await Profile.deleteMany({});
     await Job.deleteMany({});
+    await Application.deleteMany({});
+    await SavedJob.deleteMany({});
     await Course.deleteMany({});
     await Assessment.deleteMany({});
     await AssessmentResult.deleteMany({});
@@ -100,6 +104,151 @@ const seedDatabase = async () => {
           techStack: ['React', 'Node.js', 'MongoDB', 'Tailwind'],
           liveUrl: 'https://camphub.example.com',
           githubUrl: 'https://github.com/alexjohnson/camphub'
+        }
+      ]
+    });
+
+    // Student 2: Priya Patel (AI & Data Science)
+    const priyaUser = await User.create({
+      name: 'Priya Patel',
+      email: 'priya.patel@college.edu',
+      password: 'Student@123',
+      role: 'student'
+    });
+    await Profile.create({
+      userId: priyaUser._id,
+      phone: '+91 91234 56780',
+      college: 'PSG College of Technology',
+      department: 'Information Technology',
+      degree: 'B.Tech in Information Technology',
+      graduationYear: 2026,
+      location: 'Coimbatore, India',
+      bio: 'Aspiring machine learning researcher and data analyst skilled in Python, pandas, and predictive modeling.',
+      skills: [
+        { name: 'Python', category: 'Programming Language', proficiency: 'Advanced' },
+        { name: 'SQL', category: 'Database', proficiency: 'Advanced' },
+        { name: 'Pandas & NumPy', category: 'AI and Machine Learning', proficiency: 'Intermediate' },
+        { name: 'TensorFlow', category: 'AI and Machine Learning', proficiency: 'Intermediate' },
+        { name: 'Data Visualization', category: 'Tools and Technologies', proficiency: 'Intermediate' }
+      ],
+      education: [
+        {
+          institution: 'PSG College of Technology',
+          degree: 'B.Tech',
+          fieldOfStudy: 'Information Technology',
+          startYear: 2022,
+          endYear: 2026,
+          grade: '8.9 / 10 CGPA'
+        }
+      ],
+      projects: [
+        {
+          title: 'Predictive Medical Diagnostic Engine',
+          description: 'Analyzed clinical records using scikit-learn random forests achieving 92% classification accuracy.',
+          techStack: ['Python', 'scikit-learn', 'Streamlit', 'Pandas']
+        }
+      ]
+    });
+
+    // Student 3: Rohan Sharma (Cloud & DevOps)
+    const rohanUser = await User.create({
+      name: 'Rohan Sharma',
+      email: 'rohan.sharma@college.edu',
+      password: 'Student@123',
+      role: 'student'
+    });
+    await Profile.create({
+      userId: rohanUser._id,
+      phone: '+91 94567 12345',
+      college: 'Vellore Institute of Technology',
+      department: 'Computer Science',
+      degree: 'B.Tech in Computer Science',
+      graduationYear: 2025,
+      location: 'Chennai, India',
+      bio: 'Cloud architecture enthusiast focusing on Docker containerization, Kubernetes clusters, and automated CI/CD.',
+      skills: [
+        { name: 'Docker', category: 'DevOps', proficiency: 'Advanced' },
+        { name: 'Kubernetes', category: 'DevOps', proficiency: 'Intermediate' },
+        { name: 'AWS Cloud', category: 'Cloud Computing', proficiency: 'Intermediate' },
+        { name: 'Linux', category: 'Tools and Technologies', proficiency: 'Advanced' },
+        { name: 'Bash Scripting', category: 'Programming Language', proficiency: 'Intermediate' }
+      ],
+      education: [
+        {
+          institution: 'Vellore Institute of Technology',
+          degree: 'B.Tech',
+          fieldOfStudy: 'Computer Science',
+          startYear: 2021,
+          endYear: 2025,
+          grade: '8.4 / 10 CGPA'
+        }
+      ]
+    });
+
+    // Student 4: Ananya Sen (Frontend UI/UX)
+    const ananyaUser = await User.create({
+      name: 'Ananya Sen',
+      email: 'ananya.sen@college.edu',
+      password: 'Student@123',
+      role: 'student'
+    });
+    await Profile.create({
+      userId: ananyaUser._id,
+      phone: '+91 97890 23456',
+      college: 'BITS Pilani',
+      department: 'Computer Science',
+      degree: 'B.E. Computer Science',
+      graduationYear: 2026,
+      location: 'Hyderabad, India',
+      bio: 'Frontend specialist crafting pixel-perfect, accessible React and Tailwind CSS user interfaces.',
+      skills: [
+        { name: 'React.js', category: 'Frontend', proficiency: 'Advanced' },
+        { name: 'TypeScript', category: 'Programming Language', proficiency: 'Intermediate' },
+        { name: 'Tailwind CSS', category: 'Frontend', proficiency: 'Advanced' },
+        { name: 'Figma', category: 'Tools and Technologies', proficiency: 'Intermediate' }
+      ],
+      education: [
+        {
+          institution: 'BITS Pilani',
+          degree: 'B.E.',
+          fieldOfStudy: 'Computer Science',
+          startYear: 2022,
+          endYear: 2026,
+          grade: '9.1 / 10 CGPA'
+        }
+      ]
+    });
+
+    // Student 5: Karthik Raja (Java & Backend)
+    const karthikUser = await User.create({
+      name: 'Karthik Raja',
+      email: 'karthik.raja@college.edu',
+      password: 'Student@123',
+      role: 'student'
+    });
+    await Profile.create({
+      userId: karthikUser._id,
+      phone: '+91 98901 34567',
+      college: 'Kumaraguru College of Technology',
+      department: 'Information Technology',
+      degree: 'B.Tech in Information Technology',
+      graduationYear: 2026,
+      location: 'Coimbatore, India',
+      bio: 'Java enterprise developer passionate about Spring Boot, distributed microservices, and database tuning.',
+      skills: [
+        { name: 'Java', category: 'Programming Language', proficiency: 'Advanced' },
+        { name: 'Spring Boot', category: 'Backend', proficiency: 'Intermediate' },
+        { name: 'PostgreSQL', category: 'Database', proficiency: 'Intermediate' },
+        { name: 'REST APIs', category: 'Backend', proficiency: 'Intermediate' }
+      ],
+      education: [
+        {
+          institution: 'Kumaraguru College of Technology',
+          degree: 'B.Tech',
+          fieldOfStudy: 'Information Technology',
+          startYear: 2022,
+          endYear: 2026,
+          grade: '8.6 / 10 CGPA'
         }
       ]
     });
@@ -284,6 +433,69 @@ const seedDatabase = async () => {
       }
     ];
     await Job.insertMany(jobsData);
+
+    console.log('📝 Seeding realistic Job Applications with varied statuses...');
+    const allSeededJobs = await Job.find({});
+    const reactJob = allSeededJobs.find(j => j.title.includes('React')) || allSeededJobs[0];
+    const mernJob = allSeededJobs.find(j => j.title.includes('MERN')) || allSeededJobs[1];
+    const devopsJob = allSeededJobs.find(j => j.title.includes('DevOps') || j.title.includes('Cloud')) || allSeededJobs[2];
+    const dataJob = allSeededJobs.find(j => j.title.includes('Python') || j.title.includes('Data')) || allSeededJobs[3];
+    const javaJob = allSeededJobs.find(j => j.title.includes('Java')) || allSeededJobs[4];
+
+    await Application.create([
+      {
+        studentId: studentUser._id,
+        jobId: reactJob._id,
+        status: 'Shortlisted',
+        coverLetter: 'I have hands-on React and full-stack JavaScript experience demonstrated via CampHub.',
+        statusHistory: [
+          { status: 'Applied', changedAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000) },
+          { status: 'Under Review', changedAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000) },
+          { status: 'Shortlisted', changedAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000), remarks: 'Strong React portfolio projects.' }
+        ]
+      },
+      {
+        studentId: priyaUser._id,
+        jobId: dataJob._id,
+        status: 'Under Review',
+        coverLetter: 'Skilled in Python, SQL and predictive modeling.',
+        statusHistory: [
+          { status: 'Applied', changedAt: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000) },
+          { status: 'Under Review', changedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000) }
+        ]
+      },
+      {
+        studentId: rohanUser._id,
+        jobId: devopsJob._id,
+        status: 'Selected',
+        coverLetter: 'Certified in Docker and experienced in building automated CI/CD pipelines.',
+        statusHistory: [
+          { status: 'Applied', changedAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000) },
+          { status: 'Under Review', changedAt: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000) },
+          { status: 'Shortlisted', changedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000) },
+          { status: 'Selected', changedAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000), remarks: 'Exceptional system architecture and Docker knowledge.' }
+        ]
+      },
+      {
+        studentId: ananyaUser._id,
+        jobId: mernJob._id,
+        status: 'Applied',
+        coverLetter: 'Enthusiastic about building accessible, performant React web clients.',
+        statusHistory: [
+          { status: 'Applied', changedAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000) }
+        ]
+      },
+      {
+        studentId: karthikUser._id,
+        jobId: javaJob._id,
+        status: 'Rejected',
+        coverLetter: 'Passionate about Java Spring Boot microservices.',
+        statusHistory: [
+          { status: 'Applied', changedAt: new Date(Date.now() - 6 * 24 * 60 * 60 * 1000) },
+          { status: 'Rejected', changedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000), remarks: 'Role requires 1+ year enterprise experience.' }
+        ]
+      }
+    ]);
 
     console.log('📚 Seeding 10+ curated Courses...');
     const coursesData = [

@@ -2,41 +2,111 @@
   {
     "name": "SkillBridge Administrator",
     "email": "admin@skillbridge.edu",
-    "password": "$2b$10$Ium1wBo0uOmU2u.hzP4l1OD/elq4rsqPe77FMuUeEC5EsGJCFbhkS",
+    "password": "$2b$10$htdBzSLTTLT86HW/diXycuIX3CqoSLJiNwzLzo3taI8N46in0sdFa",
     "role": "admin",
-    "_id": "96cc7d0039f3cb7e4976c243",
-    "createdAt": "2026-11-01T13:19:46.018Z",
-    "updatedAt": "2026-11-01T13:19:46.018Z",
+    "_id": "a80aa0adace8c21bdaeeda08",
+    "createdAt": "2026-11-04T15:17:37.337Z",
+    "updatedAt": "2026-11-04T15:17:37.337Z",
     "isActive": true
   },
   {
     "name": "Alex Johnson",
     "email": "alex.johnson@college.edu",
-    "password": "$2b$10$Rz.lECiHjqqKM.oUmV7AdO/2pAlMZTyrFlOGRPG.P.a7BHev.aGUa",
+    "password": "$2b$10$E7CFfAzBw5/r9cEeHoO5GOTwPUnXAsS5oJmJHAB.mvOCr.oKxF2N2",
     "role": "student",
-    "_id": "6589b6c2aad89337eac747cd",
-    "createdAt": "2026-11-01T13:19:46.240Z",
-    "updatedAt": "2026-11-01T13:19:46.240Z",
+    "_id": "d72d64c2513ecad7498b3d95",
+    "createdAt": "2026-11-04T15:17:37.538Z",
+    "updatedAt": "2026-11-04T15:17:37.538Z",
+    "isActive": true
+  },
+  {
+    "name": "Priya Patel",
+    "email": "priya.patel@college.edu",
+    "password": "$2b$10$mKpj/mXt6J7uLGHj5em3weCNRDkzpGt9bQmYQx/gaVMG6OpGjoKRS",
+    "role": "student",
+    "_id": "b0e864f91ae69b6158240a7c",
+    "createdAt": "2026-11-04T15:17:37.770Z",
+    "updatedAt": "2026-11-04T15:17:37.770Z",
     "isActive": true
   },
   {
     "name": "Rohan Sharma",
     "email": "rohan.sharma@college.edu",
-    "password": "$2b$10$8aL23Rwq56J2PZz4Gne/z.oS7ukea54ELF5ZFaqRddK4dtXe2Tghi",
+    "password": "$2b$10$ATsM1svAQHS0iY8FRxHyaOwpR/45NYtxCAXDgZEDtkwYlxGEo0L/i",
     "role": "student",
-    "_id": "6724e8f5f1d62620dfd362d0",
-    "createdAt": "2026-11-01T13:21:25.085Z",
-    "updatedAt": "2026-11-01T13:21:25.085Z",
+    "_id": "c2582fb846b9f2eb413ed80e",
+    "createdAt": "2026-11-04T15:17:38.052Z",
+    "updatedAt": "2026-11-04T15:17:38.052Z",
+    "isActive": true
+  },
+  {
+    "name": "Ananya Sen",
+    "email": "ananya.sen@college.edu",
+    "password": "$2b$10$gFC3qua/.hyD96rJ35o4c.ikdAI9mS13p03i94Ay/gysTUBL3/osO",
+    "role": "student",
+    "_id": "190effcf5e18d42341ea9c95",
+    "createdAt": "2026-11-04T15:17:38.295Z",
+    "updatedAt": "2026-11-04T15:17:38.295Z",
+    "isActive": true
+  },
+  {
+    "name": "Karthik Raja",
+    "email": "karthik.raja@college.edu",
+    "password": "$2b$10$x3kweyW2lzneLRRtQ4xP/.5KI1HOWobUXbTzcz6tLpSVaFjwid9KC",
+    "role": "student",
+    "_id": "7c45a65f0434881ef49f1754",
+    "createdAt": "2026-11-04T15:17:38.461Z",
+    "updatedAt": "2026-11-04T15:17:38.461Z",
     "isActive": true
   },
   {
     "name": "Demo Deactivate Student",
     "email": "deactivate.test@college.edu",
-    "password": "$2b$10$wuL2GEqeZpMIXPR7sRJ0xOlVFDErsofq.oA7l27IFpn80BdAm1IxK",
+    "password": "$2b$10$ty7fVrQQQM1GHNqSbY.mLOybrx/IwqnbwtGKGEZhd0Oag7ndcRJJ2",
     "role": "student",
     "isActive": false,
-    "_id": "6899895d8e6599ec35e7592f",
-    "createdAt": "2026-11-01T13:21:30.724Z",
-    "updatedAt": "2026-11-01T13:21:30.881Z"
+    "_id": "18fcb56267ffcf9e67df0190",
+    "createdAt": "2026-11-04T15:18:10.225Z",
+    "updatedAt": "2026-11-04T15:18:10.392Z"
+  },
+  {
+    "name": "Rohan Sharma",
+    "email": "rohan.sharma@college.edu",
+    "password": "$2b$10$xVFZP/9NdYPrS4DG7ZiKq.t2GHXPEEOPy1rKL7wdsbax5e7N2lBOu",
+    "role": "student",
+    "_id": "a0c3c38d1b904ccb7962a6bf",
+    "createdAt": "2026-11-04T15:19:15.688Z",
+    "updatedAt": "2026-11-04T15:19:15.688Z",
+    "isActive": true
+  },
+  {
+    "name": "Demo Deactivate Student",
+    "email": "deactivate.test@college.edu",
+    "password": "$2b$10$ZFpauz38PIdPMkoTKDuDqu0fXL3mB0N/eHJBj1KE8sankjq6l9SGa",
+    "role": "student",
+    "isActive": false,
+    "_id": "587f31cc55c55c53c5040807",
+    "createdAt": "2026-11-04T15:19:22.008Z",
+    "updatedAt": "2026-11-04T15:19:22.182Z"
+  },
+  {
+    "name": "Rohan Sharma",
+    "email": "rohan.sharma@college.edu",
+    "password": "$2b$10$.gICr4KBUKV.x2uCJ7wqrujQAFGEI8DT1uAjZ2Nh9/pAh2ykvLxFe",
+    "role": "student",
+    "_id": "887ede5eb74cb8995a7472be",
+    "createdAt": "2026-11-04T15:35:07.734Z",
+    "updatedAt": "2026-11-04T15:35:07.734Z",
+    "isActive": true
+  },
+  {
+    "name": "Demo Deactivate Student",
+    "email": "deactivate.test@college.edu",
+    "password": "$2b$10$Kq5cuxb2aaHanJ1CZ..2Kui6Al5T6lf0MxBK0XakgB5aI42.iHZGe",
+    "role": "student",
+    "isActive": false,
+    "_id": "9f30098afa7f313b9cadf14c",
+    "createdAt": "2026-11-04T15:35:14.026Z",
+    "updatedAt": "2026-11-04T15:35:14.192Z"
   }
 ]

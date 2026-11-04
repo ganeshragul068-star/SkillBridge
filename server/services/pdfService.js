@@ -31,6 +31,8 @@ async function generatePdfBuffer(resume) {
         renderClassicTemplate(doc, resume);
       } else if (template === 'modern') {
         renderModernTemplate(doc, resume);
+      } else if (template === 'creative') {
+        renderCreativeTemplate(doc, resume);
       } else {
         renderAtsTemplate(doc, resume);
       }
@@ -563,6 +565,228 @@ function renderAtsSectionHeader(doc, title) {
 
   const y = doc.y + 1;
   doc.moveTo(40, y).lineTo(doc.page.width - 40, y).strokeColor('#9CA3AF').lineWidth(0.75).stroke();
+  doc.moveDown(0.3);
+}
+
+/**
+ * ============================================================================
+ * CREATIVE MINIMAL TEMPLATE (Template 4)
+ * Elegant, balanced spacing, clean typography, strict ATS-compatible structure
+ * ============================================================================
+ */
+function renderCreativeTemplate(doc, resume) {
+  const p = resume.personalInfo || {};
+  const textColor = '#18181B'; // Charcoal zinc
+  const mutedColor = '#52525B';
+
+  // Minimal Header: Name in elegant uppercase
+  doc.font('Helvetica-Bold')
+    .fontSize(19)
+    .fillColor(textColor)
+    .text((p.fullName || 'Candidate Name'), { align: 'left', characterSpacing: 0.5 });
+
+  if (resume.targetRole) {
+    doc.moveDown(0.15);
+    doc.font('Helvetica')
+      .fontSize(10)
+      .fillColor(mutedColor)
+      .text(resume.targetRole.toUpperCase(), { align: 'left', characterSpacing: 1 });
+  }
+
+  // Contact line
+  const contactParts = [
+    p.email,
+    p.phone,
+    p.location,
+    p.linkedinUrl ? cleanUrl(p.linkedinUrl) : null,
+    p.githubUrl ? cleanUrl(p.githubUrl) : null,
+    p.portfolioUrl ? cleanUrl(p.portfolioUrl) : null
+  ].filter(Boolean);
+
+  if (contactParts.length > 0) {
+    doc.moveDown(0.25);
+    doc.font('Helvetica')
+      .fontSize(8.5)
+      .fillColor(mutedColor)
+      .text(contactParts.join('   /   '));
+  }
+
+  doc.moveDown(0.4);
+
+  // Professional Summary
+  if (p.summary && p.summary.trim()) {
+    renderCreativeSectionHeader(doc, 'Profile');
+    doc.font('Helvetica')
+      .fontSize(9)
+      .fillColor(textColor)
+      .text(p.summary.trim(), { lineGap: 2.2 });
+  }
+
+  // Core Competencies / Technical Skills
+  if (Array.isArray(resume.skills) && resume.skills.length > 0) {
+    renderCreativeSectionHeader(doc, 'Competencies & Technical Skills');
+
+    const grouped = {};
+    resume.skills.forEach(skill => {
+      const cat = skill.category || 'Core Skills';
+      if (!grouped[cat]) grouped[cat] = [];
+      grouped[cat].push(typeof skill === 'string' ? skill : (skill.name || skill.skillName));
+    });
+
+    Object.keys(grouped).forEach(cat => {
+      const currentY = doc.y;
+      doc.font('Helvetica-Bold')
+        .fontSize(8.5)
+        .fillColor(textColor)
+        .text(`${cat}: `, 40, currentY, { continued: true });
+
+      doc.font('Helvetica')
+        .fontSize(8.5)
+        .fillColor(mutedColor)
+        .text(grouped[cat].join('  ·  '));
+      doc.moveDown(0.2);
+    });
+  }
+
+  // Experience / Internships
+  if (Array.isArray(resume.experience) && resume.experience.length > 0) {
+    renderCreativeSectionHeader(doc, 'Experience & Internships');
+    resume.experience.forEach(exp => {
+      const dates = [exp.startDate, exp.current ? 'Present' : exp.endDate].filter(Boolean).join(' - ');
+      renderTwoColumnRow(doc, exp.role, dates, 'Helvetica-Bold', 'Helvetica', 9.5, textColor, mutedColor);
+
+      if (exp.company) {
+        const sub = exp.location ? `${exp.company}  ·  ${exp.location}` : exp.company;
+        doc.font('Helvetica')
+          .fontSize(8.5)
+          .fillColor(mutedColor)
+          .text(sub);
+      }
+
+      if (exp.description) {
+        doc.font('Helvetica')
+          .fontSize(8.5)
+          .fillColor(textColor)
+          .text(exp.description, { lineGap: 1.5 });
+      }
+
+      if (Array.isArray(exp.bulletPoints) && exp.bulletPoints.length > 0) {
+        renderBulletPoints(doc, exp.bulletPoints, 8.5, 'Helvetica');
+      }
+      doc.moveDown(0.3);
+    });
+  }
+
+  // Projects
+  if (Array.isArray(resume.projects) && resume.projects.length > 0) {
+    renderCreativeSectionHeader(doc, 'Key Projects');
+    resume.projects.forEach(proj => {
+      const dates = [proj.startDate, proj.endDate].filter(Boolean).join(' - ');
+      const tech = Array.isArray(proj.technologies) && proj.technologies.length > 0
+        ? ` (${proj.technologies.join(', ')})`
+        : '';
+
+      renderTwoColumnRow(doc, `${proj.title}${tech}`, dates, 'Helvetica-Bold', 'Helvetica', 9.5, textColor, mutedColor);
+
+      if (proj.liveUrl || proj.githubUrl) {
+        const urls = [
+          proj.liveUrl ? cleanUrl(proj.liveUrl) : null,
+          proj.githubUrl ? cleanUrl(proj.githubUrl) : null
+        ].filter(Boolean).join('  ·  ');
+        doc.font('Helvetica')
+          .fontSize(8)
+          .fillColor('#2563EB')
+          .text(urls);
+      }
+
+      if (proj.description) {
+        doc.font('Helvetica')
+          .fontSize(8.5)
+          .fillColor(textColor)
+          .text(proj.description, { lineGap: 1.5 });
+      }
+
+      if (Array.isArray(proj.bulletPoints) && proj.bulletPoints.length > 0) {
+        renderBulletPoints(doc, proj.bulletPoints, 8.5, 'Helvetica');
+      }
+      doc.moveDown(0.3);
+    });
+  }
+
+  // Education
+  if (Array.isArray(resume.education) && resume.education.length > 0) {
+    renderCreativeSectionHeader(doc, 'Education');
+    resume.education.forEach(edu => {
+      const years = [edu.startYear, edu.endYear].filter(Boolean).join(' - ');
+      renderTwoColumnRow(doc, edu.institution, years, 'Helvetica-Bold', 'Helvetica', 9.5, textColor, mutedColor);
+
+      const degLine = [
+        edu.degree,
+        edu.fieldOfStudy ? `in ${edu.fieldOfStudy}` : null,
+        edu.grade ? `(${edu.grade})` : null
+      ].filter(Boolean).join(' ');
+
+      doc.font('Helvetica')
+        .fontSize(8.5)
+        .fillColor(mutedColor)
+        .text(degLine);
+      doc.moveDown(0.25);
+    });
+  }
+
+  // Certifications & Achievements
+  const hasCerts = Array.isArray(resume.certifications) && resume.certifications.length > 0;
+  const hasAchievements = Array.isArray(resume.achievements) && resume.achievements.length > 0;
+
+  if (hasCerts || hasAchievements) {
+    renderCreativeSectionHeader(doc, 'Certifications & Honors');
+
+    if (hasCerts) {
+      resume.certifications.forEach(cert => {
+        const line = [cert.name, cert.issuingOrganization, cert.issueDate ? `(${cert.issueDate})` : null].filter(Boolean).join(' — ');
+        doc.font('Helvetica')
+          .fontSize(8.5)
+          .fillColor(textColor)
+          .text(`• ${line}`);
+      });
+    }
+
+    if (hasAchievements) {
+      resume.achievements.forEach(ach => {
+        doc.font('Helvetica')
+          .fontSize(8.5)
+          .fillColor(textColor)
+          .text(`• ${ach}`);
+      });
+    }
+  }
+
+  // Custom Sections
+  if (Array.isArray(resume.customSections) && resume.customSections.length > 0) {
+    resume.customSections.forEach(section => {
+      if (section.heading && section.content) {
+        renderCreativeSectionHeader(doc, section.heading);
+        doc.font('Helvetica')
+          .fontSize(8.5)
+          .fillColor(textColor)
+          .text(section.content);
+      }
+    });
+  }
+}
+
+/**
+ * Helper: Render Creative Minimal Section Header
+ */
+function renderCreativeSectionHeader(doc, title) {
+  doc.moveDown(0.65);
+  doc.font('Helvetica-Bold')
+    .fontSize(10)
+    .fillColor('#18181B')
+    .text(title.toUpperCase(), { characterSpacing: 0.8 });
+
+  const y = doc.y + 1;
+  doc.moveTo(40, y).lineTo(doc.page.width - 40, y).strokeColor('#E4E4E7').lineWidth(0.5).stroke();
   doc.moveDown(0.3);
 }
 

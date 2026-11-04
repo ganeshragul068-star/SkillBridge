@@ -103,6 +103,16 @@ const resumeService = {
     return api.post('/ai/resume-analysis', data);
   },
 
+  // AI Generate Professional Summary
+  generateSummary: async (data) => {
+    return api.post('/ai/generate-summary', data);
+  },
+
+  // AI Improve Project Bullet Points
+  improveProject: async (data) => {
+    return api.post('/ai/improve-project', data);
+  },
+
   // Check AI provider status
   getAiStatus: async () => {
     return api.get('/ai/status');

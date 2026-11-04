@@ -1,6 +1,6 @@
 [
   {
-    "userId": "6589b6c2aad89337eac747cd",
+    "userId": "d72d64c2513ecad7498b3d95",
     "phone": "+91 98765 43210",
     "college": "National Institute of Technology",
     "department": "Computer Science & Engineering",
@@ -69,9 +69,218 @@
         "githubUrl": "https://github.com/alexjohnson/camphub"
       }
     ],
-    "_id": "8a02710d9ff75774e7ec8763",
-    "createdAt": "2026-11-01T13:19:46.450Z",
-    "updatedAt": "2026-11-01T13:19:46.450Z",
+    "_id": "cd7522fff77f74df121d394c",
+    "createdAt": "2026-11-04T15:17:37.745Z",
+    "updatedAt": "2026-11-04T15:17:37.745Z",
+    "certifications": []
+  },
+  {
+    "userId": "b0e864f91ae69b6158240a7c",
+    "phone": "+91 91234 56780",
+    "college": "PSG College of Technology",
+    "department": "Information Technology",
+    "degree": "B.Tech in Information Technology",
+    "graduationYear": 2026,
+    "location": "Coimbatore, India",
+    "bio": "Aspiring machine learning researcher and data analyst skilled in Python, pandas, and predictive modeling.",
+    "skills": [
+      {
+        "name": "Python",
+        "category": "Programming Language",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "SQL",
+        "category": "Database",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Pandas & NumPy",
+        "category": "AI and Machine Learning",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "TensorFlow",
+        "category": "AI and Machine Learning",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "Data Visualization",
+        "category": "Tools and Technologies",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "education": [
+      {
+        "institution": "PSG College of Technology",
+        "degree": "B.Tech",
+        "fieldOfStudy": "Information Technology",
+        "startYear": 2022,
+        "endYear": 2026,
+        "grade": "8.9 / 10 CGPA"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Predictive Medical Diagnostic Engine",
+        "description": "Analyzed clinical records using scikit-learn random forests achieving 92% classification accuracy.",
+        "techStack": [
+          "Python",
+          "scikit-learn",
+          "Streamlit",
+          "Pandas"
+        ]
+      }
+    ],
+    "_id": "10226f2f3a9ab610875ce8fa",
+    "createdAt": "2026-11-04T15:17:38.039Z",
+    "updatedAt": "2026-11-04T15:17:38.039Z",
+    "certifications": []
+  },
+  {
+    "userId": "c2582fb846b9f2eb413ed80e",
+    "phone": "+91 94567 12345",
+    "college": "Vellore Institute of Technology",
+    "department": "Computer Science",
+    "degree": "B.Tech in Computer Science",
+    "graduationYear": 2025,
+    "location": "Chennai, India",
+    "bio": "Cloud architecture enthusiast focusing on Docker containerization, Kubernetes clusters, and automated CI/CD.",
+    "skills": [
+      {
+        "name": "Docker",
+        "category": "DevOps",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Kubernetes",
+        "category": "DevOps",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "AWS Cloud",
+        "category": "Cloud Computing",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "Linux",
+        "category": "Tools and Technologies",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Bash Scripting",
+        "category": "Programming Language",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Vellore Institute of Technology",
+        "degree": "B.Tech",
+        "fieldOfStudy": "Computer Science",
+        "startYear": 2021,
+        "endYear": 2025,
+        "grade": "8.4 / 10 CGPA"
+      }
+    ],
+    "_id": "3365109ec5bb9f3ab191c452",
+    "createdAt": "2026-11-04T15:17:38.290Z",
+    "updatedAt": "2026-11-04T15:17:38.290Z",
+    "projects": [],
+    "certifications": []
+  },
+  {
+    "userId": "190effcf5e18d42341ea9c95",
+    "phone": "+91 97890 23456",
+    "college": "BITS Pilani",
+    "department": "Computer Science",
+    "degree": "B.E. Computer Science",
+    "graduationYear": 2026,
+    "location": "Hyderabad, India",
+    "bio": "Frontend specialist crafting pixel-perfect, accessible React and Tailwind CSS user interfaces.",
+    "skills": [
+      {
+        "name": "React.js",
+        "category": "Frontend",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "TypeScript",
+        "category": "Programming Language",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "Tailwind CSS",
+        "category": "Frontend",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Figma",
+        "category": "Tools and Technologies",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "education": [
+      {
+        "institution": "BITS Pilani",
+        "degree": "B.E.",
+        "fieldOfStudy": "Computer Science",
+        "startYear": 2022,
+        "endYear": 2026,
+        "grade": "9.1 / 10 CGPA"
+      }
+    ],
+    "_id": "51a774e07b2930e23851c398",
+    "createdAt": "2026-11-04T15:17:38.457Z",
+    "updatedAt": "2026-11-04T15:17:38.457Z",
+    "projects": [],
+    "certifications": []
+  },
+  {
+    "userId": "7c45a65f0434881ef49f1754",
+    "phone": "+91 98901 34567",
+    "college": "Kumaraguru College of Technology",
+    "department": "Information Technology",
+    "degree": "B.Tech in Information Technology",
+    "graduationYear": 2026,
+    "location": "Coimbatore, India",
+    "bio": "Java enterprise developer passionate about Spring Boot, distributed microservices, and database tuning.",
+    "skills": [
+      {
+        "name": "Java",
+        "category": "Programming Language",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Spring Boot",
+        "category": "Backend",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "PostgreSQL",
+        "category": "Database",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "REST APIs",
+        "category": "Backend",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Kumaraguru College of Technology",
+        "degree": "B.Tech",
+        "fieldOfStudy": "Information Technology",
+        "startYear": 2022,
+        "endYear": 2026,
+        "grade": "8.6 / 10 CGPA"
+      }
+    ],
+    "_id": "565b9df8cbe24db2956cc610",
+    "createdAt": "2026-11-04T15:17:38.614Z",
+    "updatedAt": "2026-11-04T15:17:38.614Z",
+    "projects": [],
     "certifications": []
   }
 ]

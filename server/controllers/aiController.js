@@ -1,24 +1,30 @@
 /**
- * AI Integration Controller
- * Completely independent of MongoDB.
- * Enforces live AI provider configuration without fake/hardcoded results.
+ * SkillBridge AI Integration Controller
+ * Powered by Google Gemini API with fallback to OpenAI
  */
+
+const {
+  isGeminiConfigured,
+  generateProfessionalSummary,
+  improveProjectBulletPoints,
+  analyzeResumeContent
+} = require('../services/geminiService');
 
 // @desc    Analyze student resume against job description or target role
 // @route   POST /api/ai/resume-analysis
 // @access  Public / Protected
 exports.analyzeResume = async (req, res, next) => {
   try {
-    const apiKey = process.env.GEMINI_API_KEY || process.env.OPENAI_API_KEY;
+    const hasKey = Boolean(process.env.GEMINI_API_KEY || process.env.OPENAI_API_KEY);
 
-    if (!apiKey) {
+    if (!hasKey) {
       return res.status(503).json({
         success: false,
-        message: 'AI provider is not configured. Please set GEMINI_API_KEY or OPENAI_API_KEY in server/.env to enable live AI resume analysis.'
+        message: 'AI provider is not configured. Please set GEMINI_API_KEY in server/.env to enable live AI resume analysis.'
       });
     }
 
-    const { resumeText, targetRole, jobDescription } = req.body;
+    const { resumeText, targetRole, jobDescription, customRequirements } = req.body;
 
     if (!resumeText || !resumeText.trim()) {
       return res.status(400).json({
@@ -27,73 +33,36 @@ exports.analyzeResume = async (req, res, next) => {
       });
     }
 
-    const systemPrompt = `Act as an expert ATS (Applicant Tracking System) recruiter and technical hiring manager.
-Analyze the provided student resume against the target role: "${targetRole || 'Full Stack Developer'}".
-Job description context: "${jobDescription || 'Standard Entry-Level Technical Engineering Role'}".
-
-Perform a rigorous evaluation covering:
-1. Technical skills (found and missing key requirements).
-2. Education and practical work experience relevance.
-3. Projects and certifications quality.
-4. Missing sections or critical gaps.
-5. Specific, actionable improvement recommendations.
-
-Resume content:
-"""
-${resumeText.slice(0, 10000)}
-"""
-
-Return a valid JSON object strictly matching this schema:
-{
-  "atsScore": number (0-100),
-  "matchProbability": string,
-  "foundKeywords": string[],
-  "missingKeywords": string[],
-  "skillsAnalysis": {
-    "strengths": string[],
-    "missingGaps": string[]
-  },
-  "educationAndExperience": string,
-  "projectsEvaluation": string,
-  "missingInformation": string[],
-  "formattingFeedback": string[],
-  "actionableImprovements": string[]
-}`;
-
-    // 1. Google Gemini Provider
+    // 1. Preferred Provider: Google Gemini
     if (process.env.GEMINI_API_KEY) {
-      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
-
-      const aiResponse = await fetch(geminiUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: systemPrompt }] }],
-          generationConfig: { responseMimeType: 'application/json' }
-        })
-      });
-
-      if (!aiResponse.ok) {
-        const errorData = await aiResponse.json().catch(() => ({}));
-        return res.status(502).json({
-          success: false,
-          message: `Gemini AI Provider Error: ${errorData.error ? errorData.error.message : aiResponse.statusText}`
+      try {
+        const analysis = await analyzeResumeContent({
+          resumeText,
+          targetRole,
+          jobDescription,
+          customRequirements
         });
+
+        return res.status(200).json({
+          success: true,
+          message: 'Resume analyzed successfully via live Gemini AI engine',
+          data: analysis
+        });
+      } catch (geminiError) {
+        // If not OpenAI available, return Gemini error
+        if (!process.env.OPENAI_API_KEY) {
+          return res.status(geminiError.status || 502).json({
+            success: false,
+            message: `Gemini AI Provider Error: ${geminiError.message}`
+          });
+        }
       }
-
-      const responseJson = await aiResponse.json();
-      const generatedContent = responseJson.candidates?.[0]?.content?.parts?.[0]?.text;
-      const parsedAnalysis = JSON.parse(generatedContent);
-
-      return res.status(200).json({
-        success: true,
-        message: 'Resume analyzed successfully via live Gemini AI engine',
-        data: parsedAnalysis
-      });
     }
 
-    // 2. OpenAI Provider
+    // 2. Secondary Provider: OpenAI
     if (process.env.OPENAI_API_KEY) {
+      const systemPrompt = `You are an expert ATS recruiter. Analyze resume against role: "${targetRole}". Return JSON with: atsScore, categoryScores, strengths, weakSections, missingInformation, missingKeywords, foundKeywords, recommendedSkills, formattingIssues, grammarAndSpellingIssues, projectSuggestions, summarySuggestion, actionableImprovements, jobSpecificComparison.`;
+
       const aiResponse = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -103,8 +72,8 @@ Return a valid JSON object strictly matching this schema:
         body: JSON.stringify({
           model: 'gpt-4o-mini',
           messages: [
-            { role: 'system', content: 'You are an expert ATS resume analyst. Return only valid JSON.' },
-            { role: 'user', content: systemPrompt }
+            { role: 'system', content: 'You are an ATS auditor. Return valid JSON only.' },
+            { role: 'user', content: `${systemPrompt}\n\nResume:\n${resumeText.slice(0, 10000)}` }
           ],
           response_format: { type: 'json_object' }
         })
@@ -131,7 +100,69 @@ Return a valid JSON object strictly matching this schema:
 
     return res.status(503).json({
       success: false,
-      message: 'AI provider is not configured. Please set GEMINI_API_KEY or OPENAI_API_KEY in server/.env.'
+      message: 'AI provider is not configured. Please set GEMINI_API_KEY in server/.env.'
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Generate professional summaries using Google Gemini
+// @route   POST /api/ai/generate-summary
+// @access  Public / Protected
+exports.generateSummary = async (req, res, next) => {
+  try {
+    if (!isGeminiConfigured() && !process.env.OPENAI_API_KEY) {
+      return res.status(503).json({
+        success: false,
+        message: 'AI provider is not configured. Please set GEMINI_API_KEY in server/.env to use AI summary generation.'
+      });
+    }
+
+    const { fullName, targetRole, skills, education, experience, projects } = req.body;
+
+    const result = await generateProfessionalSummary({
+      fullName,
+      targetRole,
+      skills,
+      education,
+      experience,
+      projects
+    });
+
+    res.status(200).json({
+      success: true,
+      data: result
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Improve project bullet points using Google Gemini
+// @route   POST /api/ai/improve-project
+// @access  Public / Protected
+exports.improveProject = async (req, res, next) => {
+  try {
+    if (!isGeminiConfigured() && !process.env.OPENAI_API_KEY) {
+      return res.status(503).json({
+        success: false,
+        message: 'AI provider is not configured. Please set GEMINI_API_KEY in server/.env to use AI project enhancement.'
+      });
+    }
+
+    const { title, description, technologies, existingPoints } = req.body;
+
+    const result = await improveProjectBulletPoints({
+      title,
+      description,
+      technologies,
+      existingPoints
+    });
+
+    res.status(200).json({
+      success: true,
+      data: result
     });
   } catch (error) {
     next(error);
@@ -146,11 +177,11 @@ exports.getAiStatus = (req, res) => {
   res.status(200).json({
     success: true,
     data: {
-      provider: process.env.GEMINI_API_KEY ? 'Google Gemini 1.5 Flash' : (process.env.OPENAI_API_KEY ? 'OpenAI gpt-4o-mini' : 'None'),
+      provider: process.env.GEMINI_API_KEY ? 'Google Gemini 2.5 Flash' : (process.env.OPENAI_API_KEY ? 'OpenAI gpt-4o-mini' : 'None'),
       isConfigured,
       message: isConfigured
         ? 'AI provider is configured and operational.'
-        : 'AI provider is not configured. Live AI resume analysis requires GEMINI_API_KEY or OPENAI_API_KEY in server/.env.'
+        : 'AI provider is not configured. Set GEMINI_API_KEY in server/.env to enable live AI features.'
     }
   });
 };
