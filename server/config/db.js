@@ -55,7 +55,7 @@ const connectDB = async () => {
 
   try {
     const connectOptions = {
-      serverSelectionTimeoutMS: 5000
+      serverSelectionTimeoutMS: 15000
     };
     if (process.env.DB_NAME) {
       connectOptions.dbName = process.env.DB_NAME;
