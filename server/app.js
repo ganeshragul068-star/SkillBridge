@@ -121,11 +121,15 @@ app.use('/api/mentorship-requests', mentorshipRequestRoutes);
 // Serve static client assets in production / single-server mode if client/dist exists
 const clientDistPath = path.resolve(__dirname, '../client/dist');
 if (fs.existsSync(clientDistPath)) {
+  console.log(`🌐 [Frontend Ready]: Serving React SPA from ${clientDistPath}`);
   app.use(express.static(clientDistPath));
   app.get('*', (req, res, next) => {
     if (req.path.startsWith('/api')) return next();
     res.sendFile(path.join(clientDistPath, 'index.html'));
   });
+} else {
+  console.warn(`⚠️ [Frontend Missing]: client/dist folder not found at ${clientDistPath}`);
+  console.warn('   Please run: npm --prefix client run build');
 }
 
 // Error Handling Middlewares
