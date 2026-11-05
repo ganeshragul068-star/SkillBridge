@@ -35,6 +35,14 @@ const errorHandler = require('./middleware/errorMiddleware');
 
 const app = express();
 
+// Automatically rewrite BYTEXL or cloud IDE proxy prefix (/proxy/5000)
+app.use((req, res, next) => {
+  if (req.url.startsWith('/proxy/5000')) {
+    req.url = req.url.replace(/^\/proxy\/5000/, '') || '/';
+  }
+  next();
+});
+
 // Body Parser Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

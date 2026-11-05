@@ -4,7 +4,19 @@
  * Supports both HTTP-only cookies and Authorization Bearer headers
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
+function getApiBaseUrl() {
+  if (import.meta.env.VITE_API_URL) return import.meta.env.VITE_API_URL;
+  if (typeof window !== 'undefined') {
+    const pathname = window.location.pathname;
+    const proxyMatch = pathname.match(/^(\/proxy\/\d+)/);
+    if (proxyMatch) {
+      return `${proxyMatch[1]}/api`;
+    }
+  }
+  return '/api';
+}
+
+const API_BASE_URL = getApiBaseUrl();
 
 class ApiService {
   constructor(baseUrl) {
